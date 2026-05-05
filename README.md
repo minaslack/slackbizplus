@@ -1,6 +1,3 @@
-# Biz+ 관리자화면 Walkthrough
-slack biz+ 플랜 관리자화면의 각 항목에 대한 상세 설명입니다.
-
 <!-- 전체를 감싸는 컨테이너: 너비 제한을 키우고 중앙 정렬을 추가합니다 -->
 <div style="max-width: 1200px; margin: 0 auto; font-family: 'Pretendard', sans-serif; padding: 20px;">
 
