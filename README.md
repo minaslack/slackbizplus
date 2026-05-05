@@ -34,7 +34,6 @@ slack biz+ 플랜 관리자화면의 각 항목에 대한 상세 설명입니다
       <p style="margin: 0; font-size: 16px; color: #636E72; line-height: 1.6; margin-bottom: 28px;">준비가 되셨나요?<br>우리 조직의 조직도를 구현해보세요.</p>
       <a href="#atlas" style="display: inline-block; color: #8E44AD; text-decoration: none; font-weight: 700; font-size: 15px; border-bottom: 2px solid #F3E5F5;">지금 시작하기 →</a>
     </div>
-
     <div style="flex: 1; padding: 32px; background: linear-gradient(135deg, #ffffff 0%, #F0F7FF 100%); border: 1px solid #E2EAF3; border-radius: 16px;">
       <div style="width: 56px; height: 56px; background-color: #E3F2FD; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
         <span style="font-size: 28px;">🚀</span>
