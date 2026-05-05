@@ -33,7 +33,7 @@ SCIM API를 활용한 Atlas[Add-On기능] 설정가이드입니다.<br>
       </div>
       <img width="512" alt="image" src="https://github.com/user-attachments/assets/1395a0f7-579d-4f4d-8403-da8da4bcf92d" />
       <div style="padding: 15px; background: #f9f9f9; border-top: 1px solid #e1e4e8;">
-        4) 사이드바의 [OAuth & Permissions]선택 > [Redirect URLs]섹션에 [Add New Redirect URL]버튼 클릭 후, [https://localhost]기입 >[ADD]버튼 클릭 > [Save URLs]버튼 클릭
+        4) 사이드바의 [OAuth & Permissions]선택 > [Redirect URLs]섹션에 [Add New Redirect URL]버튼 클릭 후, [https://localhost]기입 >[Add]버튼 클릭 > [Save URLs]버튼 클릭
       </div>
       <img width="1225" alt="image" src="https://github.com/user-attachments/assets/de3e8501-c353-4a50-8c81-880ce33b5bd4" />
  <div style="padding: 15px; background: #f9f9f9; border-top: 1px solid #e1e4e8;">
