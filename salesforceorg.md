@@ -5,7 +5,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
 <details style="margin-bottom: 8px; border: 2px solid #e1e4e8; border-radius: 8px; overflow: hidden;" class="accordion-group">
   <summary style="padding: 14px 16px; cursor: pointer; background: #FFFFFF; font-weight: 700; color: #24292e; display: flex; align-items: center; justify-content: space-between; border-radius: 8px 8px 0 0; list-style: none;">
       <div style="display: flex; align-items: center; gap: 12px;">
-          <img height="32" style="border-radius: 6px;" alt="image" src="https://github.com/user-attachments/assets/1da3aa4f-adf1-42de-8cfc-8457f2d0d9f1" /> 
+          <img height="32" style="border-radius: 6px;" alt="image" src="asset/image/SlackXSalesforce.png" /> 
           <span>Slack X Salesforce 연동 가이드</span>
       </div>
       <style>
