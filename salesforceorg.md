@@ -20,7 +20,9 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   </div>
 </details>
 <br>
-<img width="1466" alt="image" src="https://github.com/user-attachments/assets/cff30e00-cf31-4198-b420-a2cb666e40fc" />
+<img width="1466" alt="image" src="asset/image/SalesforceScreen.png" />
+
+
 
 
 
