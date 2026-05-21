@@ -15,7 +15,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       </style>
       <span class="arrow-icon">❯</span>
   </summary>
-  <div style="padding: 20px; background: #ffffff; border-top: 3px solid #e1e4e8; color: #444a50; font-size: 14px;">
+  <div style="padding: 20px; background: #ffffff; border-top: 1px solid #e1e4e8; color: #444a50; font-size: 14px;">
       업로드 예정
   </div>
 </details>
