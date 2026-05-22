@@ -15,8 +15,19 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       </style>
       <span class="arrow-icon">❯</span>
   </summary>
-  <div style="padding: 20px; background: #ffffff; border-top: 1px solid #e1e4e8; color: #444a50; font-size: 14px;">
-      업로드 예정
+  <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
+      <div style="flex-shrink: 0;">
+        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM</div>
+        <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
+          <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/oktavideo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div style="flex-shrink: 0;">
+        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM</div>
+        <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
+          <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/oktavideo.mp4" type="video/mp4">
+        </video>
+      </div>
   </div>
 </details>
 <br>
