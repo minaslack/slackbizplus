@@ -10,7 +10,7 @@ slack biz+ 플랜 관리자화면의 각 항목에 대한 상세 설명입니다
       <p style="margin: 0; font-size: 16px; color: #666;">워크스페이스의 원활한 이용을 위해 초기 세팅이 필요합니다.</p>
     </div>
  </div>
-  <a href="#settingguide" style="white-space: nowrap; background-color: #8E44AD; color: #ffffff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background 0.2s;">
+  <a href="#setupguide" style="white-space: nowrap; background-color: #8E44AD; color: #ffffff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background 0.2s;">
     설정하러 가기 →
   </a>
 </div>
