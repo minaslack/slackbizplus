@@ -33,7 +33,6 @@
     header p {
       color: #666;
     }
-
     /* 카테고리 필터 스타일 */
     .filter-container {
       display: flex;
@@ -59,14 +58,12 @@
       border-color: #4a154b;
       color: #fff;
     }
-
     /* 카드 그리드 레이아웃 */
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: 30px;
     }
-
     /* ─── 핵심: 카드 뒤집기 (Flip Card) CSS ─── */
     .card-scene {
       height: 380px;
@@ -96,7 +93,6 @@
       flex-direction: column;
       border: 1px solid rgba(0,0,0,0.08);
     }
-
     /* 카드 앞면 (이슈 정보) */
     .card-front {
       background-color: #ffffff;
@@ -114,7 +110,6 @@
     .badge.auth { background-color: #e3f2fd; color: #0d47a1; }
     .badge.payload { background-color: #fff3e0; color: #e65100; }
     .badge.network { background-color: #ffebee; color: #c62828; }
-
     .issue-title {
       font-size: 1.25rem;
       margin-top: 15px;
@@ -133,7 +128,6 @@
       color: #4a154b;
       font-weight: bold;
     }
-
     /* 카드 뒷면 (여러 개의 해결책) */
     .card-back {
       background-color: #2c102e; /* 슬랙 딥퍼플 테마 */
@@ -176,7 +170,6 @@
       margin-top: auto;
       padding-top: 10px;
     }
-
     /* 애니메이션 필터 처리용 */
     .card-scene.hidden {
       display: none;
@@ -184,13 +177,11 @@
   </style>
 </head>
 <body>
-
 <div class="container">
   <header>
     <h1>Slack Connector Issue Tracker</h1>
     <p>이슈 카드를 클릭하면 다수 결책(Solution) 명세를 확인할 수 있습니다.</p>
   </header>
-
   <!-- 카테고리 필터 버튼 -->
   <div class="filter-container">
     <button class="filter-btn active" data-filter="all">전체 보기</button>
@@ -198,11 +189,9 @@
     <button class="filter-btn" data-filter="payload">데이터 규격 (Payload)</button>
     <button class="filter-btn" data-filter="network">네트워크/제한 (Network)</button>
   </div>
-
   <!-- 카드 리스트 레이아웃 -->
   <div class="card-grid" id="cardGrid">
-    
-    <!-- 카드 1: 인증 에러 -->
+        <!-- 카드 1: 인증 에러 -->
     <div class="card-scene" data-category="auth">
       <div class="card" onclick="flipCard(this)">
         <div class="card-face card-front">
@@ -225,7 +214,6 @@
         </div>
       </div>
     </div>
-
     <!-- 카드 2: 페이로드 규격 에러 -->
     <div class="card-scene" data-category="payload">
       <div class="card" onclick="flipCard(this)">
@@ -249,7 +237,6 @@
         </div>
       </div>
     </div>
-
     <!-- 카드 3: 네트워크 레이트 리밋 에러 -->
     <div class="card-scene" data-category="network">
       <div class="card" onclick="flipCard(this)">
@@ -273,35 +260,28 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
-
 <script>
   // 1. 카드 뒤집기 토글 함수
   function flipCard(cardElement) {
     cardElement.classList.toggle('is-flipped');
   }
-
   // 2. 카테고리 필터링 로직
   const filterButtons = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.card-scene');
-
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       // 액티브 클래스 전환
       filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
-
       const filterValue = button.getAttribute('data-filter');
-
       cards.forEach(card => {
         // 뒤집혀 있는 카드가 있다면 필터 이동 시 다시 앞면으로 원복
         const innerCard = card.querySelector('.card');
         if (innerCard.classList.contains('is-flipped')) {
           innerCard.classList.remove('is-flipped');
         }
-
         // 카테고리 일치 여부 체크해서 노출/비노출
         if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
           card.classList.remove('hidden');
@@ -312,6 +292,5 @@
     });
   });
 </script>
-
 </body>
 </html>
