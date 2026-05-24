@@ -27,7 +27,7 @@
     }
     header h1 {
       font-size: 2.2rem;
-      color: #4a154b; /* 슬랙 시그니처 폰트 컬러 */
+      color: #4a154b; /* 슬랙 시그니처 컬러 */
       margin-bottom: 10px;
     }
     header p {
@@ -39,6 +39,7 @@
       justify-content: center;
       gap: 10px;
       margin-bottom: 40px;
+      flex-wrap: wrap;
     }
     .filter-btn {
       background-color: #fff;
@@ -70,7 +71,7 @@
       perspective: 1000px; /* 3D 입체 효과 거리 설정 */
     }
     .card {
-      width: 100% block;
+      width: 100%; /* [수정 완료] 오타 수정하여 카드 너비 정상화 */
       height: 100%;
       position: relative;
       transform-style: preserve-3d; /* 자식 요소들의 3D 평면 유지 */
@@ -133,7 +134,7 @@
       background-color: #2c102e; /* 슬랙 딥퍼플 테마 */
       color: #ffffff;
       transform: rotateY(180deg); /* 기본적으로 뒤집혀 있는 상태 정의 */
-      overflow-y: auto; /* 내용이 많으면 스크롤 생성 */
+      overflow-y: auto; /* 내용이 많으면 내부 스크롤 생성 */
     }
     .back-title {
       font-size: 1.05rem;
@@ -170,7 +171,7 @@
       margin-top: auto;
       padding-top: 10px;
     }
-    /* 애니메이션 필터 처리용 */
+    /* 필터링용 히든 처리 */
     .card-scene.hidden {
       display: none;
     }
@@ -180,7 +181,7 @@
 <div class="container">
   <header>
     <h1>Slack Connector Issue Tracker</h1>
-    <p>이슈 카드를 클릭하면 다수 결책(Solution) 명세를 확인할 수 있습니다.</p>
+    <p>이슈 카드를 클릭하면 다수의 해결책(Solution) 명세를 확인할 수 있습니다.</p>
   </header>
   <!-- 카테고리 필터 버튼 -->
   <div class="filter-container">
@@ -204,7 +205,7 @@
           <h2 class="back-title">💡 복수 해결 방안</h2>
           <div class="solution-item">
             <strong>해결책 1. 토큰 스코프 재검토</strong>
-            봇 토큰에 <code>chat:write</code> 또는 <code>incoming-webhook</code> 권한이 누락되었는지 App설정에서 확인하세요.
+            봇 토큰에 <code>chat:write</code> 또는 <code>incoming-webhook</code> 권한이 누락되었는지 App 설정에서 확인하세요.
           </div>
           <div class="solution-item">
             <strong>해결책 2. 워크스페이스 재인증</strong>
@@ -239,7 +240,7 @@
     </div>
     <!-- 카드 3: 네트워크 레이트 리밋 에러 -->
     <div class="card-scene" data-category="network">
-      <div class="card" onclick="flipCard(this)">
+      <div class="card" onclick="flipped = flipCard(this)">
         <div class="card-face card-front">
           <span class="badge network">Network</span>
           <h2 class="issue-title">🚨 HTTP 429 Too Many Requests</h2>
@@ -277,7 +278,7 @@
       button.classList.add('active');
       const filterValue = button.getAttribute('data-filter');
       cards.forEach(card => {
-        // 뒤집혀 있는 카드가 있다면 필터 이동 시 다시 앞면으로 원복
+        // 다른 카테고리로 이동 시 뒤집혀 있는 카드가 있다면 앞면으로 초기화
         const innerCard = card.querySelector('.card');
         if (innerCard.classList.contains('is-flipped')) {
           innerCard.classList.remove('is-flipped');
