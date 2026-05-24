@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>슬랙 커넥터 이슈 해결 가이드 (카드 뒤집기 테스트)</title>
+  <title>슬랙 커넥터 이슈 해결 가이드 (카드 뒤집기 완벽 수정본)</title>
   <style>
-    /* 기본 스타일 리셋 및 배경 설정 */
+    /* 기본 스타일 리셋 */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -27,7 +27,7 @@
     }
     header h1 {
       font-size: 2.2rem;
-      color: #4a154b; /* 슬랙 시그니처 컬러 */
+      color: #4a154b;
       margin-bottom: 10px;
     }
     header p {
@@ -50,11 +50,7 @@
       font-weight: 600;
       transition: all 0.2s ease;
     }
-    .filter-btn:hover {
-      border-color: #4a154b;
-      color: #4a154b;
-    }
-    .filter-btn.active {
+    .filter-btn:hover, .filter-btn.active {
       background-color: #4a154b;
       border-color: #4a154b;
       color: #fff;
@@ -65,20 +61,20 @@
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
       gap: 30px;
     }
-    /* ─── 핵심: 카드 뒤집기 (Flip Card) CSS ─── */
+    /* ─── 카드 뒤집기 애니메이션 ─── */
     .card-scene {
       height: 380px;
-      perspective: 1000px; /* 3D 입체 효과 거리 설정 */
+      perspective: 1000px; /* 3D 효과 */
     }
     .card {
-      width: 100%; /* [수정 완료] 오타 수정하여 카드 너비 정상화 */
+      width: 100%;
       height: 100%;
       position: relative;
-      transform-style: preserve-3d; /* 자식 요소들의 3D 평면 유지 */
+      transform-style: preserve-3d;
       transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
       cursor: pointer;
     }
-    /* 이 클래스가 붙으면 카드가 180도 회전합니다 */
+    /* 뒤집기 클래스 활성화 상태 */
     .card.is-flipped {
       transform: rotateY(180deg);
     }
@@ -86,7 +82,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      backface-visibility: hidden; /* 뒤집혔을 때 뒷면이 안 보이게 숨김 */
+      backface-visibility: hidden; /* 뒷면 가리기 */
       border-radius: 16px;
       padding: 24px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -94,7 +90,7 @@
       flex-direction: column;
       border: 1px solid rgba(0,0,0,0.08);
     }
-    /* 카드 앞면 (이슈 정보) */
+    /* 앞면 스타일 */
     .card-front {
       background-color: #ffffff;
       justify-content: space-between;
@@ -105,9 +101,7 @@
       border-radius: 12px;
       font-size: 0.75rem;
       font-weight: bold;
-      text-transform: uppercase;
     }
-    /* 카테고리별 배지 색상 */
     .badge.auth { background-color: #e3f2fd; color: #0d47a1; }
     .badge.payload { background-color: #fff3e0; color: #e65100; }
     .badge.network { background-color: #ffebee; color: #c62828; }
@@ -129,23 +123,23 @@
       color: #4a154b;
       font-weight: bold;
     }
-    /* 카드 뒷면 (여러 개의 해결책) */
+    /* 뒷면 스타일 */
     .card-back {
-      background-color: #2c102e; /* 슬랙 딥퍼플 테마 */
+      background-color: #2c102e;
       color: #ffffff;
-      transform: rotateY(180deg); /* 기본적으로 뒤집혀 있는 상태 정의 */
-      overflow-y: auto; /* 내용이 많으면 내부 스크롤 생성 */
+      transform: rotateY(180deg);
+      overflow-y: auto;
     }
     .back-title {
       font-size: 1.05rem;
       border-bottom: 1px solid rgba(255,255,255,0.2);
       padding-bottom: 8px;
       margin-bottom: 15px;
-      color: #ecb22e; /* 포인트 골드 컬러 */
+      color: #ecb22e;
     }
     .solution-item {
       background: rgba(255, 255, 255, 0.08);
-      border-left: 4px solid #2eb67d; /* 슬랙 그린 컬러 */
+      border-left: 4px solid #2eb67d;
       padding: 10px 12px;
       border-radius: 0 8px 8px 0;
       margin-bottom: 12px;
@@ -153,7 +147,7 @@
       line-height: 1.4;
     }
     .solution-item strong {
-      color: #36c5f0; /* 슬랙 블루 컬러 */
+      color: #36c5f0;
       display: block;
       margin-bottom: 4px;
     }
@@ -171,7 +165,6 @@
       margin-top: auto;
       padding-top: 10px;
     }
-    /* 필터링용 히든 처리 */
     .card-scene.hidden {
       display: none;
     }
@@ -194,7 +187,7 @@
   <div class="card-grid" id="cardGrid">
         <!-- 카드 1: 인증 에러 -->
     <div class="card-scene" data-category="auth">
-      <div class="card" onclick="flipCard(this)">
+      <div class="card">
         <div class="card-face card-front">
           <span class="badge auth">Auth</span>
           <h2 class="issue-title">🚨 invalid_auth 에러 발생</h2>
@@ -217,7 +210,7 @@
     </div>
     <!-- 카드 2: 페이로드 규격 에러 -->
     <div class="card-scene" data-category="payload">
-      <div class="card" onclick="flipCard(this)">
+      <div class="card">
         <div class="card-face card-front">
           <span class="badge payload">Payload</span>
           <h2 class="issue-title">🚨 400 Bad Request (missing_text_or_fallback)</h2>
@@ -240,7 +233,7 @@
     </div>
     <!-- 카드 3: 네트워크 레이트 리밋 에러 -->
     <div class="card-scene" data-category="network">
-      <div class="card" onclick="flipped = flipCard(this)">
+      <div class="card">
         <div class="card-face card-front">
           <span class="badge network">Network</span>
           <h2 class="issue-title">🚨 HTTP 429 Too Many Requests</h2>
@@ -264,30 +257,30 @@
   </div>
 </div>
 <script>
-  // 1. 카드 뒤집기 토글 함수
-  function flipCard(cardElement) {
-    cardElement.classList.toggle('is-flipped');
-  }
-  // 2. 카테고리 필터링 로직
+  // [수정 완료] 인라인 에러 유발 코드 완전 제거 후 안정적인 리스너 방식으로 변경
+  const allCards = document.querySelectorAll('.card');
+    allCards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('is-flipped');
+    });
+  });
+  // 카테고리 필터링 로직
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.card-scene');
+  const cardScenes = document.querySelectorAll('.card-scene');
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // 액티브 클래스 전환
       filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
       const filterValue = button.getAttribute('data-filter');
-      cards.forEach(card => {
-        // 다른 카테고리로 이동 시 뒤집혀 있는 카드가 있다면 앞면으로 초기화
-        const innerCard = card.querySelector('.card');
+      cardScenes.forEach(scene => {
+        const innerCard = scene.querySelector('.card');
         if (innerCard.classList.contains('is-flipped')) {
           innerCard.classList.remove('is-flipped');
         }
-        // 카테고리 일치 여부 체크해서 노출/비노출
-        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
-          card.classList.remove('hidden');
+        if (filterValue === 'all' || scene.getAttribute('data-category') === filterValue) {
+          scene.classList.remove('hidden');
         } else {
-          card.classList.add('hidden');
+          scene.classList.add('hidden');
         }
       });
     });
