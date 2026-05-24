@@ -1,8 +1,7 @@
 # 🛠️ Slack Connector Issue Tracker
 
-이슈 카드를 클릭하면 카드가 강조되면서, 아래로 숨겨져 있던 구체적인 해결책 리스트가 스르륵 나타납니다.
+이슈 카드를 클릭하면 해당 카드만 독립적으로 강조되면서, 숨겨져 있던 구체적인 해결책 리스트가 스르륵 나타납니다.
 
-<!-- ─── 깃허브 마크다운 친화적 카드 포커스 CSS (에러 없음) ─── -->
 <style>
   .card-grid {
     display: grid;
@@ -16,7 +15,7 @@
     display: none !important;
   }
 
-  /* 카드 기본 레이아웃 (정적 문서 흐름을 깨지 않아 안전함) */
+  /* 카드 기본 레이아웃 */
   .focus-card {
     background-color: #ffffff;
     border: 2px solid #e0e0e0;
@@ -81,9 +80,8 @@
   }
 </style>
 
-<!-- ─── 카드 콘텐츠 ─── -->
 <div class="card-grid">
-  <!-- 카드 1: 인증 이슈 -->
+
   <div>
     <input type="checkbox" id="f1" class="focus-trigger">
     <label for="f1" class="focus-card">
@@ -91,7 +89,7 @@
       <h3 style="margin: 10px 0 6px 0; font-size: 18px; color: #1d1c1d;">🚨 invalid_auth 에러</h3>
       <p style="font-size: 13px; color: #616061; margin-bottom: 10px;">슬랙 웹훅이나 API 전송 시 인증 실패 토큰 반환 현상</p>
       <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold;"></div>
-            <!-- 클릭 시 펼쳐지는 영역 -->
+      
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 토큰 스코프 재검토</b>
@@ -104,7 +102,7 @@
       </div>
     </label>
   </div>
-  <!-- 카드 2: 페이로드 이슈 -->
+
   <div>
     <input type="checkbox" id="f2" class="focus-trigger">
     <label for="f2" class="focus-card">
@@ -112,7 +110,7 @@
       <h3 style="margin: 10px 0 6px 0; font-size: 18px; color: #1d1c1d;">🚨 400 Bad Request</h3>
       <p style="font-size: 13px; color: #616061; margin-bottom: 10px;">Block Kit을 구성하여 전송 시 규격이 맞지 않아 거절됨</p>
       <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold;"></div>
-            <!-- 클릭 시 펼쳐지는 영역 -->
+      
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 최상위 fallback 필드 삽입</b>
@@ -125,43 +123,44 @@
       </div>
     </label>
   </div>
-    <div>
-    <input type="checkbox" id="f1" class="focus-trigger">
-    <label for="f1" class="focus-card">
-      <div style="font-weight: bold; color: #0d47a1; background: #e3f2fd; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">AUTH</div>
-      <h3 style="margin: 10px 0 6px 0; font-size: 18px; color: #1d1c1d;">🚨 invalid_auth 에러</h3>
-      <p style="font-size: 13px; color: #616061; margin-bottom: 10px;">슬랙 웹훅이나 API 전송 시 인증 실패 토큰 반환 현상</p>
+
+  <div>
+    <input type="checkbox" id="f3" class="focus-trigger">
+    <label for="f3" class="focus-card">
+      <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">NETWORK</div>
+      <h3 style="margin: 10px 0 6px 0; font-size: 18px; color: #1d1c1d;">🚨 429 Too Many Requests</h3>
+      <p style="font-size: 13px; color: #616061; margin-bottom: 10px;">단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생</p>
       <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold;"></div>
-            <!-- 클릭 시 펼쳐지는 영역 -->
+      
       <div class="solution-area">
         <div class="sol-box">
-          <b style="color: #4a154b;">해결책 1. 토큰 스코프 재검토</b>
-          봇 토큰에 <code>chat:write</code> 권한이 누락되었는지 확인하세요.
+          <b style="color: #4a154b;">해결책 1. 메시지 발송 큐(Queue) 도입</b>
+          인메모리 큐나 Redis를 사용해 초당 1회 스로틀링 기준을 맞추도록 제어합니다.
         </div>
         <div class="sol-box">
-          <b style="color: #4a154b;">해결책 2. 워크스페이스 앱 재인증</b>
-          스코프 변경 후 <b>Reinstall to Workspace</b>를 진행해야 토큰이 갱신됩니다.
+          <b style="color: #4a154b;">해결책 2. Retry-After 헤더 활용</b>
+          429 에러 응답 헤더의 <code>Retry-After</code> 값만큼 대기 후 재시도 로직을 태웁니다.
         </div>
       </div>
     </label>
   </div>
-  <!-- 카드 2: 페이로드 이슈 -->
+
   <div>
-    <input type="checkbox" id="f2" class="focus-trigger">
-    <label for="f2" class="focus-card">
-      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">PAYLOAD</div>
-      <h3 style="margin: 10px 0 6px 0; font-size: 18px; color: #1d1c1d;">🚨 400 Bad Request</h3>
-      <p style="font-size: 13px; color: #616061; margin-bottom: 10px;">Block Kit을 구성하여 전송 시 규격이 맞지 않아 거절됨</p>
+    <input type="checkbox" id="f4" class="focus-trigger">
+    <label for="f4" class="focus-card">
+      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">TIMEOUT</div>
+      <h3 style="margin: 10px 0 6px 0; font-size: 18px; color: #1d1c1d;">🚨 Gateway Timeout (504)</h3>
+      <p style="font-size: 13px; color: #616061; margin-bottom: 10px;">슬랙 엔드포인트 응답 지연 혹은 커넥션 풀 고갈 현상</p>
       <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold;"></div>
-            <!-- 클릭 시 펼쳐지는 영역 -->
+      
       <div class="solution-area">
         <div class="sol-box">
-          <b style="color: #4a154b;">해결책 1. 최상위 fallback 필드 삽입</b>
-          <code>blocks</code> 전송 시 최상위 <code>text</code> 필드를 누락했는지 확인하세요.
+          <b style="color: #4a154b;">해결책 1. 비동기(Asynchronous) 호출 전환</b>
+          요청을 보낸 후 응답을 대기하지 않고, 웹훅을 Event-Driven 방식으로 비동기 처리합니다.
         </div>
         <div class="sol-box">
-          <b style="color: #4a154b;">해결책 2. 공식 빌더 검증</b>
-          Block Kit Builder 도구에 JSON을 붙여넣어 문법 오류를 체크하세요.
+          <b style="color: #4a154b;">해결책 2. HTTP 커넥션 타임아웃 튜닝</b>
+          클라이언트 측의 Connect Timeout 설정을 3~5초 내외로 명확히 지정해 리소스 무한 대기를 방지합니다.
         </div>
       </div>
     </label>
