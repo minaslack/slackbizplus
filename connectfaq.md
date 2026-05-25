@@ -9,14 +9,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
-    /* [핵심 수정] stretch 대신 start를 주어 카드가 개별적으로 늘어나도록 설정 */
-    align-items: start; 
+    /* 기본적으로 같은 줄의 아이템 높이를 동일하게 맞춤 (stretch) */
+    align-items: stretch; 
   }
   
   /* 그리드 아이템 wrap */
   .grid-item {
     display: flex;
     flex-direction: column;
+    /* 중요: 자식 요소인 label이 부모 높이를 100% 채우도록 설정 */
+    height: 100%; 
   }
 
   /* 체크박스 숨김 */
@@ -36,6 +38,8 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    /* 카드가 접혀있을 때도 같은 줄이면 높이가 같아지도록 flex-grow 부여 */
+    flex-grow: 1; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
   }
@@ -49,6 +53,8 @@
   .card-body {
     display: flex;
     flex-direction: column;
+    /* 힌트와 해결책 영역이 바닥에 고정되도록 본문 영역을 확장 */
+    flex-grow: 1; 
   }
 
   /* 설명문 스타일 */
@@ -85,11 +91,15 @@
   }
 
   /* ─── 핵심 인터랙션: 클릭(체크) 시 ─── */
+  /* [핵심 수정] 
+     Grid의 stretch 특성 때문에 부모인 .grid-item 자체는 늘어나지 않지만, 
+     absolute나 fixed를 쓰지 않고 카드가 아래로 자연스럽게 밀고 내려가도록 position을 유지합니다. 
+     클릭된 카드만 독립적으로 내용이 펼쳐지며 자연스럽게 확장됩니다. */
   .focus-trigger:checked + .focus-card {
     border-color: #4a154b;
     background-color: #faf6fa;
     box-shadow: 0 8px 20px rgba(74, 21, 75, 0.1);
-    overflow: visible;
+    height: auto; /* 내용에 맞게 늘어나도록 설정 */
   }
 
   /* 해결책 영역 노출 */
@@ -238,4 +248,76 @@
         </div>
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 2. 채널 ID 검증</b><br>
-          채널 이름(예: #general) 대신 <code>C0
+          채널 이름(예: #general) 대신 <code>C0...</code>로 시작하는 고유 채널 ID를 정확히 입력했는지 확인하세요.
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <div class="grid-item">
+    <input type="checkbox" id="f6" class="focus-trigger">
+    <label for="f6" class="focus-card">
+      <div class="card-body">
+        <div style="font-weight: bold; color: #7b1fa2; background: #f3e5f5; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">PERMISSION</div>
+        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 not_in_channel</h3>
+        <p class="card-desc">봇이 참여하고 있지 않은 공개 채널에 메시지 발송을 시도함</p>
+      </div>
+      <div class="hint-text"></div>
+      <div class="solution-area">
+        <div class="sol-box">
+          <b style="color: #4a154b;">해결책 1. 자동으로 채널 조인 처리</b><br>
+          메시지 전송 전에 <code>conversations.join</code> API를 호출하여 봇을 채널에 먼저 입장시킵니다.
+        </div>
+        <div class="sol-box">
+          <b style="color: #4a154b;">해결책 2. 수동 채널 추가</b><br>
+          해당 공개 채널에 직접 들어가 봇을 멤버로 명시적 추가합니다.
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <div class="grid-item">
+    <input type="checkbox" id="f7" class="focus-trigger">
+    <label for="f7" class="focus-card">
+      <div class="card-body">
+        <div style="font-weight: bold; color: #00796b; background: #e0f2f1; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">SIZE</div>
+        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 msg_too_long</h3>
+        <p class="card-desc">슬랙 텍스트 필드의 최대 제한 단위를 초과하는 텍스트 전송</p>
+      </div>
+      <div class="hint-text"></div>
+      <div class="solution-area">
+        <div class="sol-box">
+          <b style="color: #4a154b;">해결책 1. 글자 수 청크 분할</b><br>
+          텍스트 본문이 4,000자를 넘지 않도록 코드가 자동으로 문자열을 분할(Chunking)해 순차 전송하게 합니다.
+        </div>
+        <div class="sol-box">
+          <b style="color: #4a154b;">해결책 2. 스니펫 업로드 기능 활용</b><br>
+          로그나 긴 텍스트 데이터의 경우 메시지 대신 <code>files.upload</code> API를 이용해 파일 형태로 전송합니다.
+        </div>
+      </div>
+    </label>
+  </div>
+
+  <div class="grid-item">
+    <input type="checkbox" id="f8" class="focus-trigger">
+    <label for="f8" class="focus-card">
+      <div class="card-body">
+        <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">USER</div>
+        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 user_not_found</h3>
+        <p class="card-desc">DM(다이렉트 메시지) 발송 시 대상 유저 식별자 오류 혹은 탈퇴된 계정</p>
+      </div>
+      <div class="hint-text"></div>
+      <div class="solution-area">
+        <div class="sol-box">
+          <b style="color: #4a154b;">해결책 1. 유저 ID 매핑 점검</b><br>
+          디스플레이 네임(이름)이 아닌, <code>U</code>로 시작하는 고유 유저 ID(예: U123456)를 사용했는지 검증하세요.
+        </div>
+        <div class="sol-box">
+          <b style="color: #4a154b;">해결책 2. 이메일 기반 검색 연동</b><br>
+          유저 ID가 가변적이라면 <code>users.lookupByEmail</code> API를 통해 최신 ID를 매번 조회 후 전송하세요.
+        </div>
+      </div>
+    </label>
+  </div>
+
+</div>
