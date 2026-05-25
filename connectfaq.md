@@ -1,36 +1,89 @@
 # 🛠️ Slack Connector Issue Tracker
 
-이슈 카드를 클릭하면 해당 카드만 독립적으로 강조되면서, 숨겨져 있던 구체적인 해결책 리스트가 스르륵 나타납니다.
+이슈 카드를 클릭하면 해당 카드만 독립적으로 강조되면서, 숨겨져 있던 구체적인 해결책 리스트가 스르륵 나타납니다. 상단 탭을 눌러 카테고리별로 필터링해 보세요!
 
 <style>
+  /* ─── [추가] 카테고리 필터 라디오 버튼 숨김 ─── */
+  .filter-trigger {
+    display: none !important;
+  }
+
+  /* ─── [추가] 필터 버튼 바 레이아웃 ─── */
+  .filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0;
+    background: #ffffff;
+    color: #616061;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .filter-btn:hover {
+    background: #f4f5f7;
+  }
+
+  /* ─── [추가] 선택된 필터 버튼 스타일 활성화 (슬랙 테마 색상) ─── */
+  #tab-all:checked ~ .filter-bar label[for="tab-all"],
+  #tab-auth:checked ~ .filter-bar label[for="tab-auth"],
+  #tab-payload:checked ~ .filter-bar label[for="tab-payload"],
+  #tab-network:checked ~ .filter-bar label[for="tab-network"],
+  #tab-timeout:checked ~ .filter-bar label[for="tab-timeout"],
+  #tab-channel:checked ~ .filter-bar label[for="tab-channel"],
+  #tab-permission:checked ~ .filter-bar label[for="tab-permission"],
+  #tab-size:checked ~ .filter-bar label[for="tab-size"],
+  #tab-user:checked ~ .filter-bar label[for="tab-user"] {
+    background: #4a154b;
+    color: #ffffff;
+    border-color: #4a154b;
+    box-shadow: 0 2px 8px rgba(74, 21, 75, 0.2);
+  }
+
+  /* ─── [추가] 필터링 핵심 로직 ─── */
+  /* 기본적으로 필터가 선택되면 모든 아이템을 숨겼다가, 해당 카테고리만 노출 */
+  #tab-auth:checked ~ .card-grid .grid-item:not(.cat-auth),
+  #tab-payload:checked ~ .card-grid .grid-item:not(.cat-payload),
+  #tab-network:checked ~ .card-grid .grid-item:not(.cat-network),
+  #tab-timeout:checked ~ .card-grid .grid-item:not(.cat-timeout),
+  #tab-channel:checked ~ .card-grid .grid-item:not(.cat-channel),
+  #tab-permission:checked ~ .card-grid .grid-item:not(.cat-permission),
+  #tab-size:checked ~ .card-grid .grid-item:not(.cat-size),
+  #tab-user:checked ~ .card-grid .grid-item:not(.cat-user) {
+    display: none !important;
+  }
+
+  /* ─── 기존 카드 그리드 스타일 ─── */
   .card-grid {
     display: grid;
-    /* 한 줄에 정확히 1개씩만 배치 */
     grid-template-columns: 1fr;
     gap: 16px;
-    /* 위쪽 여백은 유지하고, 좌우 마진을 auto로 주어 중앙 정렬 */
-    margin: 20px auto 0 auto;
-    /* 한 줄 배치에 맞춰 카드가 너무 펑퍼짐해지지 않도록 최대 너비를 800px로 최적화 */
+    margin: 10px auto 0 auto;
     max-width: 800px;
-    /* stretch를 유지하여 부모(.grid-item)들의 높이는 유지하되, 내부 정렬로 카드 높이를 제어합니다. */
     align-items: stretch; 
   }
   
-  /* 그리드 아이템 wrap */
   .grid-item {
     display: flex;
     flex-direction: column;
-    /* 카드가 펼쳐질 때 옆 카드는 상단에 붙어 본래 높이를 유지하도록 flex-start 설정 */
     align-items: flex-start;  
     height: 100%;  
   }
 
-  /* 체크박스 숨김 */
   .focus-trigger {
     display: none !important;
   }
 
-  /* 카드 기본 레이아웃 */
   .focus-card {
     position: relative;
     background-color: #ffffff;
@@ -43,7 +96,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* [수정] 불필요한 공백을 줄이기 위해 최소 높이를 140px에서 100px로 축소 */
     min-height: 100px; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
@@ -54,14 +106,12 @@
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   }
 
-  /* 카드 내부 텍스트 영역 */
   .card-body {
     display: flex;
     flex-direction: column;
     flex-grow: 1; 
   }
 
-  /* 설명문 스타일 */
   .card-desc {
     font-size: 13px;
     color: #616061;
@@ -69,7 +119,6 @@
     margin: 6px 0 0 0;
   }
 
-  /* 기본 상태에서 해결책 영역 숨김 */
   .solution-area {
     max-height: 0;
     opacity: 0;
@@ -78,10 +127,8 @@
     box-sizing: border-box;
   }
 
-  /* ─── 힌트 텍스트 ─── */
   .hint-text {
     position: relative;
-    /* [수정] 메인 설명과 한 줄 띄지 않고 바로 붙도록 마진을 0으로 수정 */
     margin-top: 0px;  
     font-size: 12px;
     color: #4a154b;
@@ -95,14 +142,12 @@
     content: "해결책 보기 ▽";
   }
 
-  /* ─── 핵심 인터랙션: 클릭(체크) 시 ─── */
   .focus-trigger:checked + .focus-card {
     border-color: #4a154b;
     background-color: #faf6fa;
     box-shadow: 0 8px 20px rgba(74, 21, 75, 0.1);
   }
 
-  /* 해결책 영역 노출 */
   .focus-trigger:checked + .focus-card .solution-area {
     max-height: 500px; 
     opacity: 1;
@@ -111,9 +156,7 @@
     border-top: 1px dashed #4a154b;
   }
 
-  /* 힌트 텍스트 문구 및 간격 변경 */
   .focus-trigger:checked + .focus-card .hint-text {
-    /* [수정] 카드가 열렸을 때도 여백이 벌어지지 않도록 수정 */
     margin-top: 0px;
   }
 
@@ -121,7 +164,6 @@
     content: "카드 접기 △";
   }
 
-  /* 해결책 내용 상자 */
   .sol-box {
     background: #ffffff;
     border: 1px solid #e9ecef;
@@ -135,7 +177,6 @@
     text-align: left;
   }
 
-  /* 모바일 대응 (이미 한 줄 정렬이므로 가로 정렬만 꽉 차게 유지) */
   @media (max-width: 768px) {
     .grid-item {
       align-items: stretch;
@@ -143,9 +184,31 @@
   }
 </style>
 
+<input type="radio" id="tab-all" name="cat-filter" class="filter-trigger" checked>
+<input type="radio" id="tab-auth" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-payload" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-network" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-timeout" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-channel" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-permission" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-size" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-user" name="cat-filter" class="filter-trigger">
+
+<div class="filter-bar">
+  <label for="tab-all" class="filter-btn">ALL</label>
+  <label for="tab-auth" class="filter-btn">AUTH</label>
+  <label for="tab-payload" class="filter-btn">PAYLOAD</label>
+  <label for="tab-network" class="filter-btn">NETWORK</label>
+  <label for="tab-timeout" class="filter-btn">TIMEOUT</label>
+  <label for="tab-channel" class="filter-btn">CHANNEL</label>
+  <label for="tab-permission" class="filter-btn">PERMISSION</label>
+  <label for="tab-size" class="filter-btn">SIZE</label>
+  <label for="tab-user" class="filter-btn">USER</label>
+</div>
+
 <div class="card-grid">
 
-  <div class="grid-item">
+  <div class="grid-item cat-auth">
     <input type="checkbox" id="f1" class="focus-trigger">
     <label for="f1" class="focus-card">
       <div class="card-body">
@@ -167,7 +230,7 @@
     </label>
   </div>
 
-  <div class="grid-item">
+  <div class="grid-item cat-payload">
     <input type="checkbox" id="f2" class="focus-trigger">
     <label for="f2" class="focus-card">
       <div class="card-body">
@@ -189,7 +252,7 @@
     </label>
   </div>
 
-  <div class="grid-item">
+  <div class="grid-item cat-network">
     <input type="checkbox" id="f3" class="focus-trigger">
     <label for="f3" class="focus-card">
       <div class="card-body">
@@ -211,7 +274,7 @@
     </label>
   </div>
 
-  <div class="grid-item">
+  <div class="grid-item cat-timeout">
     <input type="checkbox" id="f4" class="focus-trigger">
     <label for="f4" class="focus-card">
       <div class="card-body">
@@ -233,7 +296,7 @@
     </label>
   </div>
 
-  <div class="grid-item">
+  <div class="grid-item cat-channel">
     <input type="checkbox" id="f5" class="focus-trigger">
     <label for="f5" class="focus-card">
       <div class="card-body">
@@ -255,7 +318,7 @@
     </label>
   </div>
 
-  <div class="grid-item">
+  <div class="grid-item cat-permission">
     <input type="checkbox" id="f6" class="focus-trigger">
     <label for="f6" class="focus-card">
       <div class="card-body">
@@ -277,7 +340,7 @@
     </label>
   </div>
 
-  <div class="grid-item">
+  <div class="grid-item cat-size">
     <input type="checkbox" id="f7" class="focus-trigger">
     <label for="f7" class="focus-card">
       <div class="card-body">
@@ -299,7 +362,7 @@
     </label>
   </div>
 
-  <div class="grid-item">
+  <div class="grid-item cat-user">
     <input type="checkbox" id="f8" class="focus-trigger">
     <label for="f8" class="focus-card">
       <div class="card-body">
