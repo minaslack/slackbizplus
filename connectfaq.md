@@ -362,7 +362,7 @@
     </label>
   </div>
 
-  <div class="grid-item cat-user">
+  <div class="grid-item cat-auth">
     <input type="checkbox" id="f8" class="focus-trigger">
     <label for="f8" class="focus-card">
       <div class="card-body">
