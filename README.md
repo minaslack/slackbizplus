@@ -1,6 +1,6 @@
 # Biz+ 관리자화면 Walkthrough
 
-slack biz+ 플랜 관리자화면의 각 항목에 대한 상세 설명입니다.
+Slack Biz+ 플랜 관리자화면의 각 항목에 대한 상세 설명입니다.
 
 <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 28px; background-color: #F3E5F5; border: 1px solid #F3E5F5; border-radius: 12px; font-family: 'Pretendard', sans-serif; max-width: 800px; margin: 20px 0; gap: 20px;">
  <div style="display: flex; align-items: center; gap: 16px;">
