@@ -118,7 +118,6 @@
         <p style="font-size: 13px; color: #616061; line-height: 1.4; margin: 0; flex-grow: 1;">슬랙 웹훅이나 API 전송 시 인증 실패 토큰 반환 현상</p>
         <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold; margin-top: 5px;"></div>
       </div>
-      
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 토큰 스코프 재검토</b>
@@ -141,7 +140,6 @@
         <p style="font-size: 13px; color: #616061; line-height: 1.4; margin: 0; flex-grow: 1;">Block Kit을 구성하여 전송 시 규격이 맞지 않아 거절됨</p>
         <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold; margin-top: 5px;"></div>
       </div>
-      
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 최상위 fallback 필드 삽입</b>
@@ -164,7 +162,6 @@
         <p style="font-size: 13px; color: #616061; line-height: 1.4; margin: 0; flex-grow: 1;">단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생</p>
         <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold; margin-top: 5px;"></div>
       </div>
-      
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 메시지 발송 큐(Queue) 도입</b>
@@ -187,7 +184,6 @@
         <p style="font-size: 13px; color: #616061; line-height: 1.4; margin: 0; flex-grow: 1;">슬랙 엔드포인트 응답 지연 혹은 커넥션 풀 고갈 현상</p>
         <div class="hint-text" style="text-align: right; font-size: 12px; color: #4a154b; font-weight: bold; margin-top: 5px;"></div>
       </div>
-      
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 비동기(Asynchronous) 호출 전환</b>
