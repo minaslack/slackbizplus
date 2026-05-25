@@ -8,7 +8,13 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
-    align-items: start; 
+    align-items: stretch; /* [수정] 자식 래퍼들이 동일한 높이를 갖도록 설정 */
+  }
+
+  /* [추가] 카드를 감싸는 부모 div가 내부 카드를 꽉 채우도록 flex 설정 */
+  .card-grid > div {
+    display: flex;
+    flex-direction: column;
   }
   
   /* 체크박스 숨김 */
@@ -18,7 +24,7 @@
 
   /* 카드 기본 레이아웃 */
   .focus-card {
-    position: relative; /* 힌트 텍스트 고정을 위한 기준점 설정 */
+    position: relative;
     background-color: #ffffff;
     border: 2px solid #e0e0e0;
     border-radius: 12px;
@@ -29,9 +35,9 @@
     display: flex;
     flex-direction: column;
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
-    
-    /* 고정 높이를 제거하여 내부 여백이 유연하게 반응하도록 수정 */
     overflow: hidden;
+    
+    flex-grow: 1; /* [추가] 부모 div의 높이에 맞춰 카드가 꽉 차게 늘어남 */
   }
 
   .focus-card:hover {
@@ -43,6 +49,7 @@
   .card-body {
     display: flex;
     flex-direction: column;
+    flex-grow: 1; /* [추가] 해결책 영역이 열리기 전/후 상관없이 본문이 공간을 차지하도록 설정 */
   }
 
   /* 설명문 스타일 */
@@ -62,10 +69,10 @@
     box-sizing: border-box;
   }
 
-  /* ─── 힌트 텍스트: 이슈 설명에서 정확히 2줄 띄우기 ─── */
+  /* 힌트 텍스트 */
   .hint-text {
-    position: relative; /* absolute에서 변경하여 설명문 아래에 자연스럽게 위치 배치 */
-    margin-top: 26px;   /* 글자 크기(13px) 기준 딱 2줄(26px) 공간을 띄워줍니다 */
+    position: relative;
+    margin-top: 26px; /* 텍스트 아래 자연스러운 간격 유지 */
     font-size: 12px;
     color: #4a154b;
     font-weight: bold;
@@ -92,12 +99,12 @@
     opacity: 1;
     margin-top: 15px; 
     padding-top: 15px;
-    border-top: 1px dashed #4a154b; /* 구분선 역할 */
+    border-top: 1px dashed #4a154b;
   }
 
   /* 힌트 텍스트 문구 변경 및 펼쳐졌을 때의 간격 미세 조정 */
   .focus-trigger:checked + .focus-card .hint-text {
-    margin-top: 15px; /* 펼쳐졌을 때는 상자와의 균형을 위해 간격을 부드럽게 좁힘 */
+    margin-top: 15px;
   }
 
   .focus-trigger:checked + .focus-card .hint-text::after {
@@ -182,31 +189,3 @@
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 2. Retry-After 헤더 활용</b><br>
           429 에러 응답 헤더의 <code>Retry-After</code> 값만큼 대기 후 재시도 로직을 태웁니다.
-        </div>
-      </div>
-    </label>
-  </div>
-
-  <div>
-    <input type="checkbox" id="f4" class="focus-trigger">
-    <label for="f4" class="focus-card">
-      <div class="card-body">
-        <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">TIMEOUT</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 504 Gateway Timeout</h3>
-        <p class="card-desc">슬랙 엔드포인트 응답 지연 혹은 커넥션 풀 고갈 현상</p>
-      </div>
-      <div class="hint-text"></div>
-      <div class="solution-area">
-        <div class="sol-box">
-          <b style="color: #4a154b;">해결책 1. 비동기(Asynchronous) 호출 전환</b><br>
-          요청을 보낸 후 응답을 대기하지 않고, 웹훅을 Event-Driven 방식으로 비동기 처리합니다.
-        </div>
-        <div class="sol-box">
-          <b style="color: #4a154b;">해결책 2. HTTP 커넥션 타임아웃 튜닝</b><br>
-          클라이언트 측의 Connect Timeout 설정을 3~5초 내외로 지정해 무한 대기를 방지합니다.
-        </div>
-      </div>
-    </label>
-  </div>
-
-</div>
