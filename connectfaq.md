@@ -366,7 +366,7 @@
     <input type="checkbox" id="f8" class="focus-trigger">
     <label for="f8" class="focus-card">
       <div class="card-body">
-        <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">USER</div>
+        <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">AUTH</div>
         <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 user_not_found</h3>
         <p class="card-desc">DM(다이렉트 메시지) 발송 시 대상 유저 식별자 오류 혹은 탈퇴된 계정</p>
       </div>
