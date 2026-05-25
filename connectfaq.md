@@ -5,13 +5,13 @@
 <style>
   .card-grid {
     display: grid;
-    /* 한 줄에 정확히 2개씩 배치 */
-    grid-template-columns: repeat(2, 1fr);
+    /* [수정] 한 줄에 정확히 1개씩만 배치 */
+    grid-template-columns: 1fr;
     gap: 20px;
-    /* [수정] 위쪽 여백은 유지하고, 좌우 마진을 auto로 주어 중앙 정렬 */
+    /* 위쪽 여백은 유지하고, 좌우 마진을 auto로 주어 중앙 정렬 */
     margin: 20px auto 0 auto;
-    /* [수정] 카드 너비가 더 넓어질 수 있도록 최대 너비를 1200px로 확장 */
-    max-width: 1200px;
+    /* [수정] 한 줄 배치에 맞춰 카드가 너무 펑퍼짐해지지 않도록 최대 너비를 800px로 최적화 */
+    max-width: 800px;
     /* stretch를 유지하여 부모(.grid-item)들의 높이는 유지하되, 내부 정렬로 카드 높이를 제어합니다. */
     align-items: stretch; 
   }
@@ -132,13 +132,8 @@
     text-align: left;
   }
 
-  /* 모바일 대응 (화면이 좁아지면 1줄에 1개씩 보이도록 처리) */
+  /* 모바일 대응 (이미 한 줄 정렬이므로 가로 정렬만 꽉 차게 유지) */
   @media (max-width: 768px) {
-    .card-grid {
-      grid-template-columns: 1fr;
-      margin-top: 20px;
-    }
-    /* 모바일에서는 각 카드가 가로를 꽉 채우도록 설정 */
     .grid-item {
       align-items: stretch;
     }
