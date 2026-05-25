@@ -9,16 +9,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
-    /* 기본적으로 같은 줄의 아이템 높이를 동일하게 맞춤 (stretch) */
-    align-items: stretch; 
+    /* [수정] Grid 내부 아이템들이 각자 자기 내용만큼만 높이를 가지도록 상단 정렬로 변경 */
+    align-items: start; 
   }
   
   /* 그리드 아이템 wrap */
   .grid-item {
     display: flex;
     flex-direction: column;
-    /* 중요: 자식 요소인 label이 부모 높이를 100% 채우도록 설정 */
-    height: 100%; 
+    /* [수정] 부모 높이를 강제하지 않고 내부 카드 크기에 맞춤 */
+    height: auto; 
   }
 
   /* 체크박스 숨김 */
@@ -38,8 +38,8 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    /* 카드가 접혀있을 때도 같은 줄이면 높이가 같아지도록 flex-grow 부여 */
-    flex-grow: 1; 
+    /* [수정] 불필요한 flex-grow 제거 및 최소 높이 지정을 통해 기본 카드들 간 균형 유지 */
+    min-height: 140px; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
   }
@@ -53,7 +53,6 @@
   .card-body {
     display: flex;
     flex-direction: column;
-    /* 힌트와 해결책 영역이 바닥에 고정되도록 본문 영역을 확장 */
     flex-grow: 1; 
   }
 
@@ -77,7 +76,7 @@
   /* ─── 힌트 텍스트 ─── */
   .hint-text {
     position: relative;
-    margin-top: 26px;  
+    margin-top: 20px;  
     font-size: 12px;
     color: #4a154b;
     font-weight: bold;
@@ -91,10 +90,6 @@
   }
 
   /* ─── 핵심 인터랙션: 클릭(체크) 시 ─── */
-  /* [핵심 수정] 
-     Grid의 stretch 특성 때문에 부모인 .grid-item 자체는 늘어나지 않지만, 
-     absolute나 fixed를 쓰지 않고 카드가 아래로 자연스럽게 밀고 내려가도록 position을 유지합니다. 
-     클릭된 카드만 독립적으로 내용이 펼쳐지며 자연스럽게 확장됩니다. */
   .focus-trigger:checked + .focus-card {
     border-color: #4a154b;
     background-color: #faf6fa;
