@@ -8,8 +8,11 @@
     /* 한 줄에 정확히 2개씩 배치 */
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin-top: 20px;
-    /* [수정] stretch를 유지하여 부모(.grid-item)들의 높이는 유지하되, 내부 정렬로 카드 높이를 제어합니다. */
+    /* [수정] 위쪽 여백은 유지하고, 좌우 마진을 auto로 주어 중앙 정렬 */
+    margin: 20px auto 0 auto;
+    /* [수정] 카드 너비가 더 넓어질 수 있도록 최대 너비를 1200px로 확장 */
+    max-width: 1200px;
+    /* stretch를 유지하여 부모(.grid-item)들의 높이는 유지하되, 내부 정렬로 카드 높이를 제어합니다. */
     align-items: stretch; 
   }
   
@@ -17,7 +20,7 @@
   .grid-item {
     display: flex;
     flex-direction: column;
-    /* [수정] 카드가 펼쳐질 때 옆 카드는 상단에 붙어 본래 높이를 유지하도록 flex-start 설정 */
+    /* 카드가 펼쳐질 때 옆 카드는 상단에 붙어 본래 높이를 유지하도록 flex-start 설정 */
     align-items: flex-start;  
     height: 100%;  
   }
@@ -39,7 +42,6 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    /* [수정] 무조건 부모 높이를 채우던 flex-grow: 1; 을 제거하고 너비가 100%가 되도록 변경 */
     width: 100%;
     min-height: 140px; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
@@ -134,6 +136,7 @@
   @media (max-width: 768px) {
     .card-grid {
       grid-template-columns: 1fr;
+      margin-top: 20px;
     }
     /* 모바일에서는 각 카드가 가로를 꽉 채우도록 설정 */
     .grid-item {
