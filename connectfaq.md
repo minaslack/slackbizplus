@@ -5,12 +5,12 @@
 <style>
   .card-grid {
     display: grid;
-    /* [수정] 한 줄에 정확히 1개씩만 배치 */
+    /* 한 줄에 정확히 1개씩만 배치 */
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 16px;
     /* 위쪽 여백은 유지하고, 좌우 마진을 auto로 주어 중앙 정렬 */
     margin: 20px auto 0 auto;
-    /* [수정] 한 줄 배치에 맞춰 카드가 너무 펑퍼짐해지지 않도록 최대 너비를 800px로 최적화 */
+    /* 한 줄 배치에 맞춰 카드가 너무 펑퍼짐해지지 않도록 최대 너비를 800px로 최적화 */
     max-width: 800px;
     /* stretch를 유지하여 부모(.grid-item)들의 높이는 유지하되, 내부 정렬로 카드 높이를 제어합니다. */
     align-items: stretch; 
@@ -43,7 +43,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 140px; 
+    /* [수정] 불필요한 공백을 줄이기 위해 최소 높이를 140px에서 100px로 축소 */
+    min-height: 100px; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
   }
@@ -80,7 +81,8 @@
   /* ─── 힌트 텍스트 ─── */
   .hint-text {
     position: relative;
-    margin-top: 20px;  
+    /* [수정] 메인 설명과 너무 떨어져 보이지 않도록 마진을 20px에서 8px(약 한 줄 간격)로 줄임 */
+    margin-top: 8px;  
     font-size: 12px;
     color: #4a154b;
     font-weight: bold;
@@ -104,14 +106,15 @@
   .focus-trigger:checked + .focus-card .solution-area {
     max-height: 500px; 
     opacity: 1;
-    margin-top: 15px; 
-    padding-top: 15px;
+    margin-top: 12px; 
+    padding-top: 12px;
     border-top: 1px dashed #4a154b;
   }
 
   /* 힌트 텍스트 문구 및 간격 변경 */
   .focus-trigger:checked + .focus-card .hint-text {
-    margin-top: 15px;
+    /* [수정] 카드가 열렸을 때도 힌트 텍스트 위쪽 여백 유지 */
+    margin-top: 8px;
   }
 
   .focus-trigger:checked + .focus-card .hint-text::after {
