@@ -9,7 +9,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
-    /* [수정] 기본 상태에서는 같은 줄의 카드 높이가 서로 맞춰지도록 stretch(기본값)로 복원 */
+    /* [수정] stretch를 유지하여 부모(.grid-item)들의 높이는 유지하되, 내부 정렬로 카드 높이를 제어합니다. */
     align-items: stretch; 
   }
   
@@ -17,7 +17,8 @@
   .grid-item {
     display: flex;
     flex-direction: column;
-    /* [수정] 자식(.focus-card)이 부모(.grid-item)의 높이를 100% 채울 수 있도록 설정 */
+    /* [수정] 카드가 펼쳐질 때 옆 카드는 상단에 붙어 본래 높이를 유지하도록 flex-start 설정 */
+    align-items: flex-start;  
     height: 100%;  
   }
 
@@ -38,8 +39,8 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    /* [수정] 덜 펼쳐진 카드도 같은 줄에서 가장 높은 카드에 맞춰지도록 flex-grow 부여 */
-    flex-grow: 1;
+    /* [수정] 무조건 부모 높이를 채우던 flex-grow: 1; 을 제거하고 너비가 100%가 되도록 변경 */
+    width: 100%;
     min-height: 140px; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
@@ -95,7 +96,6 @@
     border-color: #4a154b;
     background-color: #faf6fa;
     box-shadow: 0 8px 20px rgba(74, 21, 75, 0.1);
-    /* [참고] 이제 height: auto 대신 Grid와 Flex 구조가 내부 컨텐츠 분량에 맞춰 자연스럽게 늘려줍니다. */
   }
 
   /* 해결책 영역 노출 */
@@ -134,6 +134,10 @@
   @media (max-width: 768px) {
     .card-grid {
       grid-template-columns: 1fr;
+    }
+    /* 모바일에서는 각 카드가 가로를 꽉 채우도록 설정 */
+    .grid-item {
+      align-items: stretch;
     }
   }
 </style>
