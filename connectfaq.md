@@ -9,16 +9,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
-    /* [수정] Grid 내부 아이템들이 각자 자기 내용만큼만 높이를 가지도록 상단 정렬로 변경 */
-    align-items: start; 
+    /* [수정] 기본 상태에서는 같은 줄의 카드 높이가 서로 맞춰지도록 stretch(기본값)로 복원 */
+    align-items: stretch; 
   }
   
   /* 그리드 아이템 wrap */
   .grid-item {
     display: flex;
     flex-direction: column;
-    /* [수정] 부모 높이를 강제하지 않고 내부 카드 크기에 맞춤 */
-    height: auto; 
+    /* [수정] 자식(.focus-card)이 부모(.grid-item)의 높이를 100% 채울 수 있도록 설정 */
+    height: 100%;  
   }
 
   /* 체크박스 숨김 */
@@ -38,7 +38,8 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    /* [수정] 불필요한 flex-grow 제거 및 최소 높이 지정을 통해 기본 카드들 간 균형 유지 */
+    /* [수정] 덜 펼쳐진 카드도 같은 줄에서 가장 높은 카드에 맞춰지도록 flex-grow 부여 */
+    flex-grow: 1;
     min-height: 140px; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
@@ -94,7 +95,7 @@
     border-color: #4a154b;
     background-color: #faf6fa;
     box-shadow: 0 8px 20px rgba(74, 21, 75, 0.1);
-    height: auto; /* 내용에 맞게 늘어나도록 설정 */
+    /* [참고] 이제 height: auto 대신 Grid와 Flex 구조가 내부 컨텐츠 분량에 맞춰 자연스럽게 늘려줍니다. */
   }
 
   /* 해결책 영역 노출 */
