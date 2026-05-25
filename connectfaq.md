@@ -1,3 +1,7 @@
+# 🛠️ Slack Connector Issue Tracker
+
+이슈 카드를 클릭하면 해당 카드만 독립적으로 강조되면서, 숨겨져 있던 구체적인 해결책 리스트가 스르륵 나타납니다.
+
 <style>
   .card-grid {
     display: grid;
