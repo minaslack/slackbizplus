@@ -18,19 +18,20 @@
 
   /* 카드 기본 레이아웃 */
   .focus-card {
+    position: relative; /* 힌트 텍스트 고정을 위한 기준점 설정 */
     background-color: #ffffff;
     border: 2px solid #e0e0e0;
     border-radius: 12px;
-    padding: 20px;
+    padding: 16px 16px 40px 16px; /* 아래쪽에 힌트 텍스트가 들어갈 공간(40px)을 미리 확보 */
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, height 0.3s ease;
     
-    /* 열리기 전 카드의 고정 높이 */
-    height: 200px; 
+    /* 콤팩트하게 줄인 접힘 상태 높이 */
+    height: 145px; 
     overflow: hidden;
   }
 
@@ -43,7 +44,6 @@
   .card-body {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
   /* 설명문 스타일 */
@@ -51,7 +51,7 @@
     font-size: 13px;
     color: #616061;
     line-height: 1.4;
-    margin: 0;
+    margin: 6px 0 0 0;
   }
 
   /* 기본 상태에서 해결책 영역 숨김 */
@@ -59,18 +59,21 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: max-height 0.3s ease, opacity 0.2s ease, margin-top 0.3s ease;
     box-sizing: border-box;
   }
 
-  /* ─── 변경된 힌트 텍스트: absolute를 제거하고 마진으로 위치 조절 ─── */
+  /* ─── 힌트 텍스트 고정: 카드 우측 하단에 완전히 박아둠 ─── */
   .hint-text {
-    margin-top: auto; /* 설명글 아래쪽, 카드 바닥 쪽에 자연스럽게 밀착 */
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
     font-size: 12px;
     color: #4a154b;
     font-weight: bold;
     text-align: right;
     line-height: 1.5;
+    z-index: 10;
   }
 
   .hint-text::after {
@@ -84,23 +87,19 @@
     box-shadow: 0 8px 20px rgba(74, 21, 75, 0.1);
     height: auto; /* 고정 높이 해제 */
     overflow: visible;
+    padding-bottom: 45px; /* 펼쳐졌을 때 하단 힌트 문구와 해결책 상자 간의 여백 확보 */
   }
 
   /* 해결책 영역 노출 */
   .focus-trigger:checked + .focus-card .solution-area {
     max-height: 500px; 
     opacity: 1;
-    margin-top: 15px; /* 힌트 텍스트와의 자연스러운 간격 */
+    margin-top: 15px; 
     padding-top: 15px;
-    border-top: 1px dashed #4a154b; /* 구분선 역할 (---) */
+    border-top: 1px dashed #4a154b; /* 구분선 역할 */
   }
 
-  /* 펼쳐졌을 때 힌트 텍스트 마진 조정 (해결책 위쪽으로 바짝 붙도록) */
-  .focus-trigger:checked + .focus-card .hint-text {
-    margin-top: 12px; 
-  }
-
-  /* 힌트 텍스트 변경 */
+  /* 힌트 텍스트 문구 변경 (위치는 그대로 고정) */
   .focus-trigger:checked + .focus-card .hint-text::after {
     content: "카드 접기 △";
   }
@@ -127,10 +126,10 @@
     <label for="f1" class="focus-card">
       <div class="card-body">
         <div style="font-weight: bold; color: #0d47a1; background: #e3f2fd; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">AUTH</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 invalid_auth 에러</h3>
+        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 invalid_auth 에러</h3>
         <p class="card-desc">슬랙 웹훅이나 API 전송 시 인증 실패 토큰 반환 현상</p>
-        <div class="hint-text"></div>
       </div>
+      <div class="hint-text"></div>
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 토큰 스코프 재검토</b><br>
@@ -149,10 +148,10 @@
     <label for="f2" class="focus-card">
       <div class="card-body">
         <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">PAYLOAD</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 400 Bad Request</h3>
+        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 400 Bad Request</h3>
         <p class="card-desc">Block Kit을 구성하여 전송 시 규격이 맞지 않아 거절됨</p>
-        <div class="hint-text"></div>
       </div>
+      <div class="hint-text"></div>
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 최상위 fallback 필드 삽입</b><br>
@@ -171,10 +170,10 @@
     <label for="f3" class="focus-card">
       <div class="card-body">
         <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">NETWORK</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 429 Too Many Requests</h3>
+        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 429 Too Many Requests</h3>
         <p class="card-desc">단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생</p>
-        <div class="hint-text"></div>
       </div>
+      <div class="hint-text"></div>
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 메시지 발송 큐(Queue) 도입</b><br>
@@ -193,10 +192,10 @@
     <label for="f4" class="focus-card">
       <div class="card-body">
         <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">TIMEOUT</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 504 Gateway Timeout</h3>
+        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 504 Gateway Timeout</h3>
         <p class="card-desc">슬랙 엔드포인트 응답 지연 혹은 커넥션 풀 고갈 현상</p>
-        <div class="hint-text"></div>
       </div>
+      <div class="hint-text"></div>
       <div class="solution-area">
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 1. 비동기(Asynchronous) 호출 전환</b><br>
