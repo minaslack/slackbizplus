@@ -32,7 +32,6 @@
     /* 열리기 전 카드의 고정 높이 */
     height: 200px; 
     overflow: hidden;
-    position: relative; /* 힌트 텍스트의 기준점이 됨 */
   }
 
   .focus-card:hover {
@@ -47,13 +46,12 @@
     height: 100%;
   }
 
-  /* 설명문 글자 제한 및 여백 관리 */
+  /* 설명문 스타일 */
   .card-desc {
     font-size: 13px;
     color: #616061;
     line-height: 1.4;
     margin: 0;
-    padding-bottom: 32px; /* 설명문 아래에 2줄 분량(약 32px)의 명확한 여백 확보 */
   }
 
   /* 기본 상태에서 해결책 영역 숨김 */
@@ -65,11 +63,9 @@
     box-sizing: border-box;
   }
 
-  /* ─── 핵심 수정: 힌트 텍스트 위치 고정 (설명문 아래 2줄 여백 지점) ─── */
+  /* ─── 변경된 힌트 텍스트: absolute를 제거하고 마진으로 위치 조절 ─── */
   .hint-text {
-    position: absolute;
-    top: 135px; /* 상단 패딩 및 타이틀 고려, 설명문 바로 아래 2줄 띈 위치에 고정 */
-    right: 20px;
+    margin-top: auto; /* 설명글 아래쪽, 카드 바닥 쪽에 자연스럽게 밀착 */
     font-size: 12px;
     color: #4a154b;
     font-weight: bold;
@@ -90,16 +86,21 @@
     overflow: visible;
   }
 
-  /* 해결책 영역 노출 (카드접기/힌트 텍스트 아래쪽으로 펼쳐짐) */
+  /* 해결책 영역 노출 */
   .focus-trigger:checked + .focus-card .solution-area {
     max-height: 500px; 
     opacity: 1;
-    margin-top: 30px; /* 힌트 텍스트 위치 아랫단부터 시작되도록 마진 조정 */
+    margin-top: 15px; /* 힌트 텍스트와의 자연스러운 간격 */
     padding-top: 15px;
     border-top: 1px dashed #4a154b; /* 구분선 역할 (---) */
   }
 
-  /* 힌트 텍스트 변경 (위치는 동일하게 유지) */
+  /* 펼쳐졌을 때 힌트 텍스트 마진 조정 (해결책 위쪽으로 바짝 붙도록) */
+  .focus-trigger:checked + .focus-card .hint-text {
+    margin-top: 12px; 
+  }
+
+  /* 힌트 텍스트 변경 */
   .focus-trigger:checked + .focus-card .hint-text::after {
     content: "카드 접기 △";
   }
