@@ -22,16 +22,15 @@
     background-color: #ffffff;
     border: 2px solid #e0e0e0;
     border-radius: 12px;
-    padding: 16px 16px 40px 16px; /* 아래쪽에 힌트 텍스트가 들어갈 공간(40px)을 미리 확보 */
+    padding: 16px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, height 0.3s ease;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     
-    /* 콤팩트하게 줄인 접힘 상태 높이 */
-    height: 145px; 
+    /* 고정 높이를 제거하여 내부 여백이 유연하게 반응하도록 수정 */
     overflow: hidden;
   }
 
@@ -63,11 +62,10 @@
     box-sizing: border-box;
   }
 
-  /* ─── 힌트 텍스트 고정: 카드 우측 하단에 완전히 박아둠 ─── */
+  /* ─── 힌트 텍스트: 이슈 설명에서 정확히 2줄 띄우기 ─── */
   .hint-text {
-    position: absolute;
-    bottom: 16px;
-    right: 16px;
+    position: relative; /* absolute에서 변경하여 설명문 아래에 자연스럽게 위치 배치 */
+    margin-top: 26px;   /* 글자 크기(13px) 기준 딱 2줄(26px) 공간을 띄워줍니다 */
     font-size: 12px;
     color: #4a154b;
     font-weight: bold;
@@ -85,9 +83,7 @@
     border-color: #4a154b;
     background-color: #faf6fa;
     box-shadow: 0 8px 20px rgba(74, 21, 75, 0.1);
-    height: auto; /* 고정 높이 해제 */
     overflow: visible;
-    padding-bottom: 45px; /* 펼쳐졌을 때 하단 힌트 문구와 해결책 상자 간의 여백 확보 */
   }
 
   /* 해결책 영역 노출 */
@@ -99,7 +95,11 @@
     border-top: 1px dashed #4a154b; /* 구분선 역할 */
   }
 
-  /* 힌트 텍스트 문구 변경 (위치는 그대로 고정) */
+  /* 힌트 텍스트 문구 변경 및 펼쳐졌을 때의 간격 미세 조정 */
+  .focus-trigger:checked + .focus-card .hint-text {
+    margin-top: 15px; /* 펼쳐졌을 때는 상자와의 균형을 위해 간격을 부드럽게 좁힘 */
+  }
+
   .focus-trigger:checked + .focus-card .hint-text::after {
     content: "카드 접기 △";
   }
