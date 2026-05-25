@@ -81,8 +81,8 @@
   /* ─── 힌트 텍스트 ─── */
   .hint-text {
     position: relative;
-    /* [수정] 메인 설명과 너무 떨어져 보이지 않도록 마진을 20px에서 8px(약 한 줄 간격)로 줄임 */
-    margin-top: 8px;  
+    /* [수정] 메인 설명과 한 줄 띄지 않고 바로 붙도록 마진을 0으로 수정 */
+    margin-top: 0px;  
     font-size: 12px;
     color: #4a154b;
     font-weight: bold;
@@ -113,8 +113,8 @@
 
   /* 힌트 텍스트 문구 및 간격 변경 */
   .focus-trigger:checked + .focus-card .hint-text {
-    /* [수정] 카드가 열렸을 때도 힌트 텍스트 위쪽 여백 유지 */
-    margin-top: 8px;
+    /* [수정] 카드가 열렸을 때도 여백이 벌어지지 않도록 수정 */
+    margin-top: 0px;
   }
 
   .focus-trigger:checked + .focus-card .hint-text::after {
