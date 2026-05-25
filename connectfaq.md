@@ -57,7 +57,7 @@
   }
 
   .hint-text::after {
-    content: "클릭해서 해결책 보기 ▽";
+    content: "해결책 보기 ▽";
   }
 
   /* ─── 핵심 인터랙션: 클릭(체크) 시 높이 해제 및 확장 ─── */
@@ -81,7 +81,7 @@
 
   /* 힌트 텍스트 변경 */
   .focus-trigger:checked + .focus-card .hint-text::after {
-    content: "클릭해서 카드 접기 △";
+    content: "카드 접기 △";
   }
 
   /* 해결책 내용 상자 */
