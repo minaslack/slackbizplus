@@ -46,6 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative; /* 위치 기준점 설정 */
   }
 
   /* 기본 상태에서 해결책 영역 숨김 */
@@ -54,6 +55,13 @@
     opacity: 0;
     overflow: hidden;
     transition: all 0.3s ease;
+  }
+
+  /* ─── 핵심 수정: 힌트 텍스트 위치 고정 (설명문 아래 2줄 여백) ─── */
+  .hint-text {
+    position: absolute;
+    top: 115px; /* 제목과 설명글 아래에 고정되도록 절대 위치 지정 */
+    right: 0;
   }
 
   .hint-text::after {
@@ -74,7 +82,7 @@
   .focus-trigger:checked + .focus-card .solution-area {
     max-height: 500px; 
     opacity: 1;
-    margin-top: 15px;
+    margin-top: 45px; /* 힌트 텍스트 영역 공간 확보를 위해 마진 조정 */
     padding-top: 15px;
     border-top: 1px dashed #4a154b;
   }
