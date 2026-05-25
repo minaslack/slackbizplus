@@ -5,15 +5,15 @@
 <style>
   .card-grid {
     display: grid;
-    /* 한 줄에 정확히 2개씩 배치 (반응형을 원하시면 repeat(auto-fill, minmax(300px, 1fr))로 롤백 가능) */
+    /* 한 줄에 정확히 2개씩 배치 */
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
-    /* stretch를 주어 같은 줄의 카드 높이가 자동으로 같아지도록 설정 */
-    align-items: stretch; 
+    /* [핵심 수정] stretch 대신 start를 주어 카드가 개별적으로 늘어나도록 설정 */
+    align-items: start; 
   }
   
-  /* 그리드 아이템 wrap (높이 동기화를 위해 중요) */
+  /* 그리드 아이템 wrap */
   .grid-item {
     display: flex;
     flex-direction: column;
@@ -36,8 +36,6 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    /* 카드 자체가 부모(grid-item)의 높이를 가득 채우도록 설정 */
-    flex: 1; 
     transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
     overflow: hidden;
   }
@@ -51,8 +49,6 @@
   .card-body {
     display: flex;
     flex-direction: column;
-    /* 해결책이나 힌트가 아래로 밀리도록 본문 영역이 남은 공간을 채움 */
-    flex: 1; 
   }
 
   /* 설명문 스타일 */
@@ -242,72 +238,4 @@
         </div>
         <div class="sol-box">
           <b style="color: #4a154b;">해결책 2. 채널 ID 검증</b><br>
-          채널 이름(예: #general) 대신 <code>C0123456789</code> 형태의 고유 채널 고유 ID를 사용했는지 확인하세요.
-        </div>
-      </div>
-    </label>
-  </div>
-
-  <div class="grid-item">
-    <input type="checkbox" id="f6" class="focus-trigger">
-    <label for="f6" class="focus-card">
-      <div class="card-body">
-        <div style="font-weight: bold; color: #37474f; background: #eceff1; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">WEBHOOK</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 404 Missing Verification</h3>
-        <p class="card-desc">Incoming Webhook URL이 유효하지 않거나 삭제된 상태</p>
-      </div>
-      <div class="hint-text"></div>
-      <div class="solution-area">
-        <div class="sol-box">
-          <b style="color: #4a154b;">해결책 1. 웹훅 URL 활성화 확인</b><br>
-          Slack App 설정 페이지에서 해당 Webhook URL이 여전히 활성화 상태인지(Active) 점검하세요.
-        </div>
-        <div class="sol-box">
-          <b style="color: #4a154b;">해결책 2. 재생성 및 주소 교체</b><br>
-          웹훅을 생성한 사용자가 워크스페이스를 나간 경우 비활성화되므로, 새로운 웹훅을 생성해 교체합니다.
-        </div>
-      </div>
-    </label>
-  </div>
-
-  <div class="grid-item">
-    <input type="checkbox" id="f7" class="focus-trigger">
-    <label for="f7" class="focus-card">
-      <div class="card-body">
-        <div style="font-weight: bold; color: #6a1b9a; background: #f3e5f5; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">ESCAPING</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 알림 멘션 및 링크 깨짐</h3>
-        <p class="card-desc">메시지 내부의 유저 ID 멘션(@)이나 하이퍼링크가 정상적으로 변환되지 않는 현상</p>
-      </div>
-      <div class="hint-text"></div>
-      <div class="solution-area">
-        <div class="sol-box">
-          <b style="color: #4a154b;">해결책 1. 슬랙 전용 멘션 문법 준수</b><br>
-          유저 멘션은 일반 텍스트 대신 <code>&lt;@U12345678&gt;</code> 형태로 감싸서 발송해야 합니다.
-        </div>
-        <div class="sol-box">
-          <b style="color: #4a154b;">해결책 2. 특수문자 이스케이프</b><br>
-          메시지 내에 포함된 <code>&amp;</code>, <code>&lt;</code>, <code>&gt;</code> 문자들을 각각 HTML Entity 형태로 변환 처리하세요.
-        </div>
-      </div>
-    </label>
-  </div>
-
-  <div class="grid-item">
-    <input type="checkbox" id="f8" class="focus-trigger">
-    <label for="f8" class="focus-card">
-      <div class="card-body">
-        <div style="font-weight: bold; color: #00838f; background: #e0f7fa; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">FILE API</div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 files.upload 중단 에러</h3>
-        <p class="card-desc">기존 파일 업로드 API 호출 시 에러가 나거나 전송이 실패하는 현상</p>
-      </div>
-      <div class="hint-text"></div>
-      <div class="solution-area">
-        <div class="sol-box">
-          <b style="color: #4a154b;">해결책 1. 신규 V2 API 메서드로 전환</b><br>
-          Deprecated된 <code>files.upload</code> 대신, 새로운 방식인 <code>files.getUploadURLExternal</code> 및 <code>files.completeUploadExternal</code> 조합으로 마이그레이션하세요.
-        </div>
-      </div>
-    </label>
-  </div>
-
-</div>
+          채널 이름(예: #general) 대신 <code>C0
