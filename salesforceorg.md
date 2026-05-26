@@ -18,8 +18,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
       <div style="flex-shrink: 0;">
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM</div>
-        Slack 안에서 대화하듯 고객을 관리할 수 있는 CRM으로<br> 
-        Salesforce 기반으로 자동 프로비저닝, Slackbot이 메모·후속조치·고객조사까지 대신 처리해줍니다.<br>
+        Slack 안에서 대화하듯 고객을 관리하고, Salesforce 기반의 자동 프로비저닝과 Slackbot이 메모·후속 조치·고객 조사까지 알아서 처리해 드립니다.<br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다. 
 <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 14px; margin: 20px 0;">
   <thead>
