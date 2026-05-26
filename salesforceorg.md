@@ -17,7 +17,40 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   </summary>
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
       <div style="flex-shrink: 0;">
-        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM</div>
+        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM<br>
+        Slack 안에서 대화하듯 고객을 관리할 수 있는 CRM으로<br> 
+        Salesforce 기반으로 자동 프로비저닝, Slackbot이 메모·후속조치·고객조사까지 대신 처리해줍니다.<br>
+          </div>
+        <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; margin: 20px 0;">
+  <thead>
+    <tr style="border-top: 1px solid #d0d7de; border-bottom: 1px solid #d0d7de; background-color: #f6f8fa;">
+      <th style="padding: 12px 16px; text-align: left; font-weight: 600; width: 25%; border: 1px solid #d0d7de;">항목</th>
+      <th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #d0d7de;">내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #d0d7de;">
+      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">지원 플랜</td>
+      <td style="padding: 12px 16px; border: 1px solid #d0d7de;"><strong>Business+ V2 전용</strong> (무료/Pro/Biz+ V1에서 업그레이드 가능)</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #d0d7de;">
+      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">사용자 제한</td>
+      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">최대 100명 (Salesforce Free Suite 기반)</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #d0d7de;">
+      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">Enterprise+</td>
+      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">현재 미지원, 일정 미정</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #d0d7de;">
+      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">활성화 방법</td>
+      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">셀프서비스 – 워크스페이스 이름 &gt; 도구 &gt; CRM 토글</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #d0d7de;">
+      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">업그레이드 시</td>
+      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">Core AE 통해 신규 견적 생성 + Salesforce Org ID 추가</td>
+    </tr>
+  </tbody>
+</table>
         <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
           <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackCRM.mp4" type="video/mp4">
         </video>
