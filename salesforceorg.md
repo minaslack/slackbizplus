@@ -6,7 +6,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <summary style="padding: 14px 16px; cursor: pointer; background: #FFFFFF; font-weight: 700; color: #24292e; display: flex; align-items: center; justify-content: space-between; border-radius: 8px 8px 0 0; list-style: none;">
       <div style="display: flex; align-items: center; gap: 12px;">
           <img height="32" style="border-radius: 6px;" alt="image" src="asset/image/SlackXSalesforce.png" /> 
-          <span>[작성중]Slack CRM 설정 가이드</span>
+          <span>Slack CRM 설정 가이드</span>
       </div>
       <style>
           summary::-webkit-details-marker { display: none; } /* 맥/아이폰용 기본 화살표 삭제 */
@@ -39,7 +39,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       <td style="padding: 10px 14px; border: 1px solid #d0d7de; color: #24292f;">최대 100명 (Salesforce Free Suite 기반)</td>
     </tr>
     <tr style="border-bottom: 1px solid #d0d7de;">
-      <td style="padding: 10px 14px; font-weight: bold; border: 1px solid #d0d7de; font-size: 13px; color: #24292f;">활성화 방법</td>
+      <td style="padding: 10px 14px; font-weight: bold; border: 1px solid #d0d7de; font-size: 13px; color: #24292f;">설정 방법</td>
       <td style="padding: 10px 14px; border: 1px solid #d0d7de; color: #24292f;">워크스페이스 이름 &gt; 환경설정 &gt; Salesforce</td>
     </tr>
   </tbody>
@@ -47,9 +47,6 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
           <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackCRM.mp4" type="video/mp4">
         </video>
-      </div>
-      <div style="flex-shrink: 0;">
-        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">상세 가이드</div>
       </div>
   </div>
 </details>
