@@ -54,7 +54,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <summary style="padding: 14px 16px; cursor: pointer; background: #FFFFFF; font-weight: 700; color: #24292e; display: flex; align-items: center; justify-content: space-between; border-radius: 8px 8px 0 0; list-style: none;">
       <div style="display: flex; align-items: center; gap: 12px;">
           <img height="32" style="border-radius: 6px;" alt="image" src="asset/image/SlackXSalesforce.png" /> 
-          <span>[작성중]Slack X Salesforce 연동 가이드</span>
+          <span>[작성중]Slack X Salesforce 연동 가이드_새 Slack 워크스페이스 만들기</span>
       </div>
       <style>
           summary::-webkit-details-marker { display: none; } /* 맥/아이폰용 기본 화살표 삭제 */
