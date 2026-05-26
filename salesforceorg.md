@@ -22,25 +22,25 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         Slack 안에서 대화하듯 고객을 관리할 수 있는 CRM으로<br> 
         Salesforce 기반으로 자동 프로비저닝, Slackbot이 메모·후속조치·고객조사까지 대신 처리해줍니다.<br>
           </div>
-        <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; margin: 20px 0;">
+<table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 14px; margin: 20px 0;">
   <thead>
     <tr style="border-top: 1px solid #d0d7de; border-bottom: 1px solid #d0d7de; background-color: #f6f8fa;">
-      <th style="padding: 12px 16px; text-align: left; font-weight: 600; width: 25%; border: 1px solid #d0d7de;">항목</th>
-      <th style="padding: 12px 16px; text-align: left; font-weight: 600; border: 1px solid #d0d7de;">내용</th>
+      <th style="padding: 10px 14px; text-align: left; font-weight: 600; width: 25%; border: 1px solid #d0d7de; font-size: 13px;">항목</th>
+      <th style="padding: 10px 14px; text-align: left; font-weight: 600; border: 1px solid #d0d7de;">내용</th>
     </tr>
   </thead>
   <tbody>
     <tr style="border-bottom: 1px solid #d0d7de;">
-      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">지원 플랜</td>
-      <td style="padding: 12px 16px; border: 1px solid #d0d7de;"><strong>Business+ V2 전용</strong> (무료/Pro/Biz+ V1에서 업그레이드 가능)</td>
+      <td style="padding: 10px 14px; font-weight: bold; border: 1px solid #d0d7de; font-size: 13px; color: #24292f;">지원 플랜</td>
+      <td style="padding: 10px 14px; border: 1px solid #d0d7de; color: #24292f;"><strong>Business+ V2 전용</strong> (무료/Pro/Biz+ V1에서 업그레이드 가능)</td>
     </tr>
     <tr style="border-bottom: 1px solid #d0d7de;">
-      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">사용자 제한</td>
-      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">최대 100명 (Salesforce Free Suite 기반)</td>
+      <td style="padding: 10px 14px; font-weight: bold; border: 1px solid #d0d7de; font-size: 13px; color: #24292f;">사용자 제한</td>
+      <td style="padding: 10px 14px; border: 1px solid #d0d7de; color: #24292f;">최대 100명 (Salesforce Free Suite 기반)</td>
     </tr>
     <tr style="border-bottom: 1px solid #d0d7de;">
-      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">활성화 방법</td>
-      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">워크스페이스 이름 &gt; 환경설정 &gt; Salesforce</td>
+      <td style="padding: 10px 14px; font-weight: bold; border: 1px solid #d0d7de; font-size: 13px; color: #24292f;">활성화 방법</td>
+      <td style="padding: 10px 14px; border: 1px solid #d0d7de; color: #24292f;">워크스페이스 이름 &gt; 환경설정 &gt; Salesforce</td>
     </tr>
   </tbody>
 </table>
