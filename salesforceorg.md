@@ -18,6 +18,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
       <div style="flex-shrink: 0;">
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM<br>
+          <br>
         Slack 안에서 대화하듯 고객을 관리할 수 있는 CRM으로<br> 
         Salesforce 기반으로 자동 프로비저닝, Slackbot이 메모·후속조치·고객조사까지 대신 처리해줍니다.<br>
           </div>
@@ -38,16 +39,8 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       <td style="padding: 12px 16px; border: 1px solid #d0d7de;">최대 100명 (Salesforce Free Suite 기반)</td>
     </tr>
     <tr style="border-bottom: 1px solid #d0d7de;">
-      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">Enterprise+</td>
-      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">현재 미지원, 일정 미정</td>
-    </tr>
-    <tr style="border-bottom: 1px solid #d0d7de;">
       <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">활성화 방법</td>
-      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">셀프서비스 – 워크스페이스 이름 &gt; 도구 &gt; CRM 토글</td>
-    </tr>
-    <tr style="border-bottom: 1px solid #d0d7de;">
-      <td style="padding: 12px 16px; font-weight: bold; border: 1px solid #d0d7de;">업그레이드 시</td>
-      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">Core AE 통해 신규 견적 생성 + Salesforce Org ID 추가</td>
+      <td style="padding: 12px 16px; border: 1px solid #d0d7de;">워크스페이스 이름 &gt; 환경설정 &gt; Salesforce</td>
     </tr>
   </tbody>
 </table>
