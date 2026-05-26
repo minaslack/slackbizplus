@@ -4,7 +4,7 @@ SCIM API를 활용한 Atlas[Add-On기능] 설정가이드입니다.<br>
 <Strong>초기설정1,2 완료 후 사용자 업데이트</Strong> 진행해주세요.<br>
 해당 방식으로 사용자 프로필정보(SCIM API타입 항목)도 업데이트 가능합니다.<br>
 <a href="https://slack.com/intl/ko-kr/help/articles/22467765879315-Slack-%EC%95%84%ED%8B%80%EB%9D%BC%EC%8A%A4%EB%A1%9C-%ED%94%84%EB%A1%9C%ED%95%84-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%A7%80%EC%A0%95#%EC%97%94%ED%84%B0%ED%94%84%EB%9D%BC%EC%9D%B4%EC%A6%88-%ED%94%8C%EB%9E%9C-2" target="_blank" 
-     rel="noopener noreferrer" style="color: #1264a3; text-decoration: none;">📌 Slack 아틀라스로 프로필 사용자 지정</a></li>
+     rel="noopener noreferrer" style="color: #1264a3; text-decoration: none;">📌 참조 링크 : Slack 아틀라스로 프로필 사용자 지정</a></li>
 <br>
 <img width="500" alt="image" src="asset/image/Org_Chart.png" />
           
