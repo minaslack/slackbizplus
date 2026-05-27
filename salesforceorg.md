@@ -146,7 +146,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       display: flex;
       width: 100%;
       max-width: 720px;         /* 카드의 최대 너비 */
-      min-height: 125px;        /* 카드의 최소 높이 */
+      min-height: 75px;        /* 카드의 최소 높이 125 */
       background-color: #ffffff;
       border: 1px solid #e2e2e2;/* 부드러운 회색 테두리 */
       border-radius: 12px;      /* 둥근 모서리 */
@@ -174,7 +174,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
     /* 제목 스타일 */
     .card-main-title {
       margin: 0 0 6px 0;
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 700;
       color: #1d1c1d;            /* 슬랙 기본 메인 글자색 */
       line-height: 1.4;
