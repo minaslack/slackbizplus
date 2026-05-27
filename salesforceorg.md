@@ -251,9 +251,9 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <a href="https://slack.com/intl/ko-kr/resources/slack-for-admins/salesforce-channels-implementation-guide" target="_blank" class="slack-card-container">
     <div class="card-info-side">
       <div>
-        <h3 class="card-main-title">Salesforce Channels: Implementation Guide</h3>
+        <h3 class="card-main-title">Salesforce 채널: 구현 가이드</h3>
         <p class="card-sub-description">
-          Download our technical guide for a step-by-step walkthrough to help you configure Salesforce Channels.
+          Salesforce 채널 구성 시 도움이 되는 단계별 안내를 살펴보려면 기술 가이드를 다운로드하세요.
         </p>
       </div>
     </div>
