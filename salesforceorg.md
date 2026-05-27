@@ -112,14 +112,163 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       </div>
   </div>
 </details>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slack Style Link Preview Card</title>
+  
   <meta property="og:title" content="Salesforce Channels: Implementation Guide" />
   <meta property="og:description" content="Download our technical guide for a step-by-step walkthrough to help you configure Salesforce Channels." />
-  <meta property="og:image" content="https://yourdomain.com/path-to-your-image.png" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400" />
   <meta property="og:site_name" content="Slack" />
-  <meta property="og:url" content="https://yourdomain.com/your-page-url" />
   <meta property="og:type" content="website" />
+
+  <style>
+    /* 화면 중앙 정렬을 위한 기본 스타일 (테스트용) */
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* ===================================================
+       슬랙 스타일 링크 카드 컴포넌트 소스 시작
+    =================================================== */
+    
+    /* 1. 카드 전체 외곽선 및 레이아웃 */
+    .slack-card-container {
+      display: flex;
+      width: 100%;
+      max-width: 720px;         /* 카드의 최대 너비 */
+      min-height: 125px;        /* 카드의 최소 높이 */
+      background-color: #ffffff;
+      border: 1px solid #e2e2e2;/* 부드러운 회색 테두리 */
+      border-radius: 12px;      /* 둥근 모서리 */
+      overflow: hidden;         /* 자식 요소가 모서리를 빠져나가지 않게 처리 */
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-decoration: none;    /* 링크 밑줄 제거 */
+      transition: background-color 0.2s ease;
+    }
+
+    /* 마우스 올렸을 때 살짝 반응하는 효과 (선택 사항) */
+    .slack-card-container:hover {
+      background-color: #fafafa;
+    }
+
+    /* 2. 왼쪽 텍스트 정보 영역 */
+    .card-info-side {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* 위아래 내용 간격 배치 */
+    }
+
+    /* 제목 스타일 */
+    .card-main-title {
+      margin: 0 0 6px 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: #1d1c1d;            /* 슬랙 기본 메인 글자색 */
+      line-height: 1.4;
+    }
+
+    /* 본문 설명 스타일 */
+    .card-sub-description {
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      color: #4a4a4a;            /* 부드러운 본문 글자색 */
+      line-height: 1.5;
+      /* 두 줄 이상 넘어갈 때 말줄임(...) 처리 */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* 하단 푸터 (아이콘 + 서비스명) */
+    .card-footer-meta {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #616061;            /* 푸터용 옅은 회색 */
+    }
+
+    /* 파비콘/서비스 아이콘 */
+    .provider-brand-icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+      object-fit: contain;
+    }
+
+    /* 서비스 이름 */
+    .provider-brand-name {
+      font-weight: 600;
+    }
+
+    /* 구분선 (|) */
+    .meta-vertical-divider {
+      margin: 0 6px;
+      color: #d1d1d1;
+    }
+
+    /* 추가 텍스트 (오늘에 추가함 등) */
+    .meta-additional-text {
+      color: #868686;
+    }
+
+    /* 3. 오른쪽 이미지 영역 */
+    .card-image-side {
+      width: 150px;             /* 이미지 영역 고정 너비 */
+      background-color: #b3caff; /* 이미지 로딩 전 보일 배경색 (슬랙 느낌의 연보라/블루) */
+      flex-shrink: 0;           /* 카드 크기가 줄어도 이미지 너비 고정 */
+    }
+
+    .card-thumbnail-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;         /* 비율을 유지하며 영역을 꽉 채움 */
+      display: block;
+    }
+
+    /* 반응형: 화면이 너무 좁아지면 우측 이미지를 숨기거나 크기를 줄임 */
+    @media (max-width: 480px) {
+      .card-image-side {
+        width: 100px;
+      }
+    }
+  </style>
 </head>
+<body>
+  <a href="https://slack.com" target="_blank" class="slack-card-container">
+    <div class="card-info-side">
+      <div>
+        <h3 class="card-main-title">Salesforce Channels: Implementation Guide</h3>
+        <p class="card-sub-description">
+          Download our technical guide for a step-by-step walkthrough to help you configure Salesforce Channels.
+        </p>
+      </div>
+      <div class="card-footer-meta">
+        <img src="https://a.slack-edge.com/80511/img/services/api_24.png" alt="Slack Icon" class="provider-brand-icon">
+        <span class="provider-brand-name">Slack</span>
+        <span class="meta-vertical-divider">|</span>
+        <span class="meta-additional-text">오늘에 추가함</span>
+      </div>
+    </div>
+    <div class="card-image-side">
+      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400" alt="Thumbnail" class="card-thumbnail-img">
+    </div>
+  </a>
+</body>
+</html>
 <br>
 <img width="1466" alt="image" src="asset/image/SalesforceScreen.png" />
 
