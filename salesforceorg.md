@@ -248,7 +248,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   </style>
 </head>
 <body>
-  <a href="https://slack.com" target="_blank" class="slack-card-container">
+  <a href="https://slack.com/intl/ko-kr/resources/slack-for-admins/salesforce-channels-implementation-guide" target="_blank" class="slack-card-container">
     <div class="card-info-side">
       <div>
         <h3 class="card-main-title">Salesforce Channels: Implementation Guide</h3>
@@ -256,15 +256,9 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
           Download our technical guide for a step-by-step walkthrough to help you configure Salesforce Channels.
         </p>
       </div>
-      <div class="card-footer-meta">
-        <img src="https://a.slack-edge.com/80511/img/services/api_24.png" alt="Slack Icon" class="provider-brand-icon">
-        <span class="provider-brand-name">Slack</span>
-        <span class="meta-vertical-divider">|</span>
-        <span class="meta-additional-text">오늘에 추가함</span>
-      </div>
     </div>
     <div class="card-image-side">
-      <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400" alt="Thumbnail" class="card-thumbnail-img">
+      <img src="https://github.com/user-attachments/assets/f935c132-8f85-4a5b-b9bb-03813e916f97" alt="Thumbnail" class="card-thumbnail-img">
     </div>
   </a>
 </body>
