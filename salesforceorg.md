@@ -173,7 +173,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
 
     /* 제목 스타일 */
     .card-main-title {
-      margin: 0 0 6px 0;
+      margin: 0 0 4px 0;
       font-size: 13px;
       font-weight: 700;
       color: #1d1c1d;            /* 슬랙 기본 메인 글자색 */
