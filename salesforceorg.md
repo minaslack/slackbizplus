@@ -258,7 +258,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       </div>
     </div>
     <div class="card-image-side">
-      <img src="https://github.com/user-attachments/assets/7becd547-01e9-4e0b-a342-fc15373364f" alt="Thumbnail" class="card-thumbnail-img">
+      <img src="https://github.com/user-attachments/assets/5d434b32-142d-4a84-871c-bf9d07ef5f73" alt="Thumbnail" class="card-thumbnail-img">
     </div>
   </a>
 </body>
