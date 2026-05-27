@@ -112,6 +112,14 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
       </div>
   </div>
 </details>
+<head>
+  <meta property="og:title" content="Salesforce Channels: Implementation Guide" />
+  <meta property="og:description" content="Download our technical guide for a step-by-step walkthrough to help you configure Salesforce Channels." />
+  <meta property="og:image" content="https://yourdomain.com/path-to-your-image.png" />
+  <meta property="og:site_name" content="Slack" />
+  <meta property="og:url" content="https://yourdomain.com/your-page-url" />
+  <meta property="og:type" content="website" />
+</head>
 <br>
 <img width="1466" alt="image" src="asset/image/SalesforceScreen.png" />
 
