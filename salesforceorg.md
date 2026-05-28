@@ -100,7 +100,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
       <div style="flex-shrink: 0;">
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack X Salesforce</div>
-        해당 가이드는 <strong>기존 Salesforce & Slack 고객들이 연동해서 사용하기 위한 가이드</strong>입니다.<br>
+        해당 가이드는 <strong>기존 Salesforce & Slack을 직접 연동해서 사용하기 위한 가이드</strong>입니다.<br>
         아래 <strong>[Salesforce 채널: 구현 가이드]</strong>를 통해서 상세 가이드를 확인하실 수 있습니다.<br>
         <br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다.<br>
