@@ -284,27 +284,29 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <input type="checkbox" id="f3" class="focus-trigger">
   <label for="f3" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">NETWORK</div>
-      <div style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px;">
-        <div style="flex: 1; min-width: 250px;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 429 Too Many Requests</h3>
-          <p class="card-desc" style="margin: 0;">단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생</p>
+      <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">NETWORK</div>
+      <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
+        <div style="flex: 1; min-width: 0;">
+          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 429 Too Many Requests</h3>
+          <p class="card-desc" style="margin: 0; color: #4a4a4a; font-size: 14px; line-height: 1.5; word-break: keep-all;">
+            단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생
+          </p>
         </div>
-        <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 400px; max-width: 100%;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/96baa30d-579e-4bd3-b8d3-160e4dc0b8fa" style="max-width: 100%; height: auto;" />
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/07f3e7a6-bd7f-4ddd-a098-2245f1343223" style="max-width: 100%; height: auto;" />
+        <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 300px; max-width: 45%;">
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/96baa30d-579e-4bd3-b8d3-160e4dc0b8fa" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/07f3e7a6-bd7f-4ddd-a098-2245f1343223" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
         </div>
       </div>
     </div>
     <div class="hint-text"></div>
-    <div class="solution-area">
+    <div class="solution-area" style="margin-top: 16px;">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 메시지 발송 큐(Queue) 도입</span><br>
         상대방 조직에서 일반 멤버가 Slack Connect 초대를 수락할 수 없도록 설정해 둔 경우이거나 또는 초대 받는 사람이 멤버가 아니고 Guest 인 경우 입니다.<br>
         초대받는 사람이 상대방 조직의 관리자와 확인이 필요합니다.<br>
         임시로 사용가능한 방법으로는 상대방 조직의 관리자를 Slack Connect 로 포스트/초대 가능 권한으로 초대하고, 상대방 조직의 관리자가 직접 해당 멤버를 채널에 초대하는 것입니다.<br>
       </div>
-      <div class="sol-box">
+      <div class="sol-box" style="margin-top: 12px;">
         <span class="sol-title">해결책 2. Retry-After 헤더 활용</span><br>
         429 에러 응답 헤더의 <code>Retry-After</code> 값만큼 대기 후 재시도 로직을 태웁니다.
       </div>
