@@ -357,10 +357,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
         <span class="sol-title">해결책 1. 봇을 채널에 초대</span><br>
 /feedback 또는  feedback@slack.com 을 통해 문의하시기 바랍니다. 
       </div>
-      <div class="sol-box">
-        <span class="sol-title">해결책 2. 채널 ID 검증</span><br>
-        채널 이름(예: #general) 대신 <code>C0...</code>로 시작하는 고유 채널 ID를 정확히 입력했는지 확인하세요.
-      </div>
     </div>
   </label>
 </div>
