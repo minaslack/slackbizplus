@@ -1,6 +1,15 @@
 # 🛠️ Slack Connector Issue Tracker
 
-이슈 카드를 클릭하면 해당 카드만 독립적으로 강조되면서, 숨겨져 있던 구체적인 해결책 리스트가 스르륵 나타납니다. 상단 탭을 눌러 카테고리별로 필터링해 보세요!
+Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한 일반적인 방법을 안내합니다.<br>
+본 가이드로 해결이 되지 않는 부분은 /feedback 또는 feedback@slack.com 을 통하여 Slack CE 팀의 지원을 받으시는 것을 권장합니다.<br>
+
+티켓 접수시 아래와 같은 내용이 준비되면 좋습니다.<br>
+
+1. Slack Connect 를 통해 초대가 되고 있는 채널의 ID<br>
+2. 채널을 소유한 조직의 워크스페이스 URL <br>
+3. Slack Connect 초대를 보내고 있는 사용자의 email / 초대한 사람의 email <br>
+   초대 받는 사람이 Slack Connect 를 연결하고자 하는 워크스페이스의  URL<br>
+4. 스크린샷<br>
 
 <style>
   /* ─── [추가] 카테고리 필터 라디오 버튼 숨김 ─── */
