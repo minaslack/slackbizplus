@@ -536,8 +536,8 @@
     <thead>
       <tr style="background-color: #f6f8fa; border-top: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8;">
         <th style="padding: 12px; font-weight: bold; width: 25%; border-right: 1px solid #e1e4e8;">Action</th>
-        <th style="padding: 12px; font-weight: bold; width: 45%; border-right: 1px solid #e1e4e8;">초대 및 포스트 가능</th>
-        <th style="padding: 12px; font-weight: bold; width: 30%;">포스트만 가능</th>
+        <th style="padding: 12px; font-weight: bold; width: 37.5%; border-right: 1px solid #e1e4e8;">초대 및 포스트 가능</th>
+        <th style="padding: 12px; font-weight: bold; width: 37.5%;">포스트만 가능</th>
       </tr>
     </thead>
     <tbody>
