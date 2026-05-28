@@ -395,3 +395,76 @@
   </div>
 
 </div>
+사본 -  구현 가이드 - Salesforce 채널
+Step 1 - Slack과 Salesforce 연결
+
+조직이 이미 Slack을 내부 협업에 사용하는지 여부에 따라 Slack을 Salesforce에 연결하는 단계가 다릅니다.
+
+새 Slack 워크스페이스 만들기
+
+Slack을 아직 사용하지 않는다면 다음 단계를 따라 Salesforce 환경에 연결된 Slack 워크스페이스를 즉시 만드세요. 이미 Slack 워크스페이스 또는 Enterprise Grid 조직이 있다면 다음 섹션으로 건너뛰어 기존 워크스페이스를 Salesforce에 연결하세요.
+Salesforce에서:
+
+1. 설정(Setup) 아이콘을 클릭합니다.
+2. 빠른 찾기(Quick Find) 박스에서 단계별 Slack 설정(Slack Guided Setup)을 검색하여 선택합니다.
+3. Slack 설정 시작(Start Slack Setup) 를 선택합니다.
+4. Slack 작업 영역 만들기(Create a Slack workspace)에 시작하기(Get Started)를 클릭합니다.
+5. Slack 워크스페이스 이름을 입력한 후 저장(Save)를 클릭합니다.
+
+새 Slack 워크스페이스는 자동으로 Salesforce 환경에 연결됩니다. 기본적으로 Slack은 이메일 주소를 기반으로 사용자 계정을 매핑합니다. Federation ID를 기반으로 매핑하려면 Manage Slack Connection 페이지를 통해 수동으로 연결을 설정할 수 있습니다. Slack 워크스페이스를 탐색하려면 로그인 방법이 담긴 이메일을 받게 됩니다.
+
+레코드 페이지에 Slack 대화 추가(Add Slack conversation to record pages)에 추가(Add)를 클릭
+
+
+Step 2 - Salesforce 채널용 객체 구성
+
+기록을 위한 Slack 채널(Slack Channels for Records)의 선택한 개체에 Slack 버튼 표시(Show Slack Button on Selected Objects) 토글 활성화
+개체별 Slack 활성화의 [+개체 추가]클릭
+허용할 개체 검색하여 선택 후, [개체 추가]클릭
+
+단계별 Slack 설정
+레코드 페이지에 Slack 대화 추가
+이 단계는 완료했습니다 체크
+
+
+다음으로, Salesforce 채널이 레코드 페이지에 표시되는 방식을 선택할 수 있습니다. 두 가지 옵션이 있습니다:
+Lightning 컴포넌트 구현 방법:
+
+1. 각 레코드 페이지에서 Lightning 앱 빌더로 이동
+2. 페이지에 "Slack" 컴포넌트를 추가하고 Save를 클릭하여 완료
+
+
+
+Step 3 - 사용자에게 Slack 접근 권한 부여
+
+Salesforce 채널에 접근이 필요한 사용자는 Slack 계정이 필요하며, 기존 워크스페이스 사용자 모두에게 이미 접근 권한이 있다면 이 단계를 건너뛸 수 있습니다. 새 워크스페이스 연결 또는 추가 사용자 프로비저닝이 필요한 경우, Salesforce 내부 사용자 자동 프로비저닝이나 Okta 같은 ID 공급자를 활용할 수 있습니다.
+Okta를 활용하는 과정을 좀 더 자세히 설명해줄래?
+
+단계별 Slack 설정
+사용자에게 Slack에 대한 액세스 권한 자동 부여
+[관리]클릭
+
+Slack 연결 관리 
+사용자에게 Slack에 대한 액세스 권한 자동 부여
+[관리]클릭
+
+팝업에서 [Slack 계정 자동 생성 및 연결] 선택 후 [저장]클릭
+
+사용자에게 Slack 접근 권한을 자동으로 부여하면 해당 사용자들은 Slack 계정을 설정하라는 이메일을 받게 됩니다.
+또는 테스트 목적으로 팀원을 수동으로 초대하여 Slack 접근 권한을 부여할 수도 있습니다.
+
+
+Step 4 - Slack 사용자 초대 (계정 생성)
+
+
+ [Slack 계정 자동 생성 및 연결]  이메일을 기준으로 자동 연결됨
+아닌 경우는 수동으로 연결해 줘야 함
+
+https://slack.com/intl/en-gb/resources/slack-for-admins/salesforce-channels-implementation-guide
+
+
+
+
+
+
+
