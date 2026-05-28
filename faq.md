@@ -588,13 +588,13 @@
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">관리자 관리</td>
         <td colspan="2" style="padding: 12px;">
           채널 생성시 각 조직의 관리자가 승인 (승인 필요 설정시)<br>
-          외부 조직과의 모든 연결을 승인하고 감사할 수 있습니다.
+          외부 조직과의 모든 연결을 승인하고 감사할 수 있음
         </td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">앱</td>
-        <td style="padding: 12px; border-right: 1px solid #e1e4e8;">각 조직은 채널에서 자체 앱 및 통합 기능에 액세스할 수 있습니다. <br>(상대방 조직의 앱 사용 불가)</td>
-        <td style="padding: 12px;">채널에서 봇을 추가 또는 제거하거나 워크플로우를 추가하거나 워크플로우를 제거할 수 없습니다. <br>(상대방 조직의 앱 사용 불가)</td>
+        <td style="padding: 12px; border-right: 1px solid #e1e4e8;">각 조직은 채널에서 자체 앱 및 통합 기능에 액세스할 수 있음<br>(상대방 조직의 앱 사용 불가)</td>
+        <td style="padding: 12px;">채널에서 봇을 추가 또는 제거하거나 워크플로우를 추가하거나 워크플로우를 제거할 수 없음 <br>(상대방 조직의 앱 사용 불가)</td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">워크플로우</td>
@@ -606,7 +606,7 @@
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">이모지</td>
-        <td colspan="2" style="padding: 12px;">각 조직은 자체의 이모티콘 팩에 액세스할 수 있습니다.</td>
+        <td colspan="2" style="padding: 12px;">각 조직은 자체의 이모티콘 팩에 액세스할 수 있음</td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">캔버스 / 리스트</td>
