@@ -20,6 +20,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM</div>
         Slack에서 바로 이어지는 고객 여정<br>
         Salesforce 데이터와 연동해 메모·알림·후속 조치를 자동으로 처리합니다.<br>
+        <br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다. 
 <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 14px; margin: 20px 0;">
   <thead>
