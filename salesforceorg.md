@@ -82,9 +82,6 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         </video>
       </div>
     <br>
-      <div style="flex-shrink: 0;">
-        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">상세 가이드</div>
-      </div>
   </div>
 </details>
 <details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;" class="accordion-group">
