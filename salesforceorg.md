@@ -81,8 +81,9 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
           <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackCRM.mp4" type="video/mp4">
         </video>
+        <br>
         <strong>참고 사항 : </strong><br>
-        일반 사용자들이 Slack을 사용하기 위해서는 Salesforce에서의 이메일로 멤버 초대가 필요합니다.
+        일반 사용자들이 Slack을 사용하기 위해서는 Salesforce에서의 사용자 이메일로 멤버 초대가 필요합니다.
       </div>
     <br>
   </div>
