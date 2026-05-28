@@ -448,24 +448,27 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
   <input type="checkbox" id="f8" class="focus-trigger">
   <label for="f8" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
-        <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 채널이 곧 준비됩니다.</h3>
-          <p class="card-desc" style="margin: 0;">이 채널은 계속 진행하기 전에 관리자의 승인을 받아야합니다. 원하는 경우, 준비가 됐을 때 고객님을 추가해드릴 수 있습니다.</p>
+      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">AUTH</div>
+      <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
+        <div style="flex: 1; min-width: 0;">
+          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 채널이 곧 준비됩니다.</h3>
+          <p class="card-desc" style="margin: 0; color: #4a4a4a; font-size: 14px; line-height: 1.5; word-break: keep-all;">
+            이 채널은 계속 진행하기 전에 관리자의 승인을 받아야합니다. 원하는 경우, 준비가 됐을 때 고객님을 추가해드릴 수 있습니다.
+          </p>
         </div>
-        <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/d13fd43f-bb9e-471b-8873-7f4d9aa2215a" style="max-width: 100%; height: auto;" />
+        <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 300px; max-width: 45%;">
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/d13fd43f-bb9e-471b-8873-7f4d9aa2215a" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/f6e2e707-c35b-4536-9f8f-2b403f3a2837" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
         </div>
       </div>
     </div>
     <div class="hint-text"></div>
-    <div class="solution-area">
+    <div class="solution-area" style="margin-top: 16px;">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 유저 ID 매핑 점검</span><br>
         상대방 조직의 멤버 A,B 를 동시에 초대하고 멤버 A 가 먼저 초대를 수락하였으나, 아직 양 조직/워크스페이스의 관리자 승인이 되지 않았을 때 멤버 B 가 초대 링크를 클릭하게 되는 경우 나오는 화면 입니다.<br>
-이때 준비되면 본인 추가 버튼을 눌러두면 향후 양 조직/워크스페이스의 관리자 승인이 되었을 때 자동으로 추가됩니다.<br>
-</div>
+        이때 준비되면 본인 추가 버튼을 눌러두면 향후 양 조직/워크스페이스의 관리자 승인이 되었을 때 자동으로 추가됩니다.<br>
+      </div>
     </div>
   </label>
 </div>
