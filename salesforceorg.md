@@ -104,6 +104,8 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack X Salesforce</div>
         Salesforce 채널은 팀 대화와 고객 데이터를 하나로 연결해 더 스마트하고 빠른 협업을 가능하게 합니다.<br>
         Salesforce 채널은 레코드별 전용 채널을 제공하며, Salesforce 접근 권한 여부에 따라 데이터 열람·편집 가능 여부가 달라지지만 모든 팀원이 Slack에서 협업할 수 있습니다.<br>
+        아래 <strong>[Salesforce 채널: 구현 가이드]</strong>를 통해서 상세 가이드를 확인하실 수 있습니다.<br>
+        <br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다.<br>
         <br>
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">📌 설정 가이드</div>
