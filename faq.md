@@ -540,6 +540,8 @@
       <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
         Slack Connect는 <strong>초대를 보내는 쪽에서 채널 소유권</strong>을 가지게 됩니다. (변경할 수 없음)<br>
         <br>
+        <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/883e5776-8f59-46b1-bcce-6c327f984d1c" />
+<br>
         Slack Connect 외부 사용자의 채널권한은 아래와 같습니다.<br>
         참고해서 Connect 초대 해주세요.<br>
         <br>
