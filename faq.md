@@ -538,6 +538,8 @@
         <span style="color: #1264a3; font-size: 12px;">더보기 ▼</span>
       </summary>
       <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
+        Slack Connect는 초대를 보내는 쪽에서 채널 소유권을 가지게 됩니다. 이 소유권은 변경할 수 없습니다. <br>
+        <br>
         Slack Connect 외부 사용자의 채널권한은 아래와 같습니다.<br>
         참고해서 Connect 초대 해주세요.<br>
         <br>
