@@ -543,11 +543,10 @@
     <tbody>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">비용</td>
-        <td style="padding: 12px; border-right: 1px solid #e1e4e8;">
+        <td colspan="2" style="padding: 12px;">
           유료플랜간 추가비용없이 사용가능<br>
           Grid 플랜은 무료플랜과도 Slack Connect 연결 가능 (Sponsored)
         </td>
-        <td style="padding: 12px;"></td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">누가 대화에 사람을 추가할 수 있나요?</td>
@@ -600,11 +599,10 @@
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">캔버스 / 리스트</td>
-        <td colspan="2" style="padding: 12px;">상대방 조직에 공유 가능<br>(상대방 조직이 무료 플랜인 경우 리스트 공유 불가 / 캔버스 공유 가능-읽기전용)
-</td>
+        <td colspan="2" style="padding: 12px;">상대방 조직에 공유 가능<br>(상대방 조직이 무료 플랜인 경우 리스트 공유 불가 / 캔버스 공유 가능-읽기전용)</td>
       </tr>
     </tbody>
-  </table>
+</table>
 </div>
     </details>
   </div>
