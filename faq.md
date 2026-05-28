@@ -536,7 +536,7 @@
     </details>
       <details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
       <summary style="padding: 12px 15px; background: #fafbfc; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; outline: none;">
-        <span>Slack Connect_외부 사용자의 채널 권한</span>
+        <span>Slack Connect 외부 사용자의 채널 권한</span>
         <span style="color: #1264a3; font-size: 12px;">더보기 ▼</span>
       </summary>
       <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
@@ -561,8 +561,8 @@
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">누가 대화에 사람을 추가할 수 있나요?</td>
         <td style="padding: 12px; border-right: 1px solid #e1e4e8;">
-          채널소유자 조직 - 모든 조직 멤버 초대 가능<br>
-          외부 조직 - 각 외부 조직의 멤버만 초대 가능
+          채널소유자 조직 <br>- 모든 조직 멤버 초대 가능<br>
+          외부 조직 <br>- 각 외부 조직의 멤버만 초대 가능
         </td>
         <td style="padding: 12px;">채널소유자 조직만 추가 가능</td>
       </tr>
@@ -592,8 +592,8 @@
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">앱</td>
-        <td style="padding: 12px; border-right: 1px solid #e1e4e8;">각 조직은 채널에서 자체 앱 및 통합 기능에 액세스할 수 있습니다. (상대방 조직의 앱 사용 불가)</td>
-        <td style="padding: 12px;">채널에서 봇을 추가 또는 제거하거나 워크플로우를 추가하거나 워크플로우를 제거할 수 없습니다. (상대방 조직의 앱 사용 불가)</td>
+        <td style="padding: 12px; border-right: 1px solid #e1e4e8;">각 조직은 채널에서 자체 앱 및 통합 기능에 액세스할 수 있습니다. <br>(상대방 조직의 앱 사용 불가)</td>
+        <td style="padding: 12px;">채널에서 봇을 추가 또는 제거하거나 워크플로우를 추가하거나 워크플로우를 제거할 수 없습니다. <br>(상대방 조직의 앱 사용 불가)</td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">워크플로우</td>
