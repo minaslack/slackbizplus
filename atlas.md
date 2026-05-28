@@ -5,9 +5,7 @@ SCIM API를 활용한 Atlas[Add-On기능] 설정가이드입니다.<br>
 해당 방식으로 사용자 프로필정보(SCIM API타입 항목)도 업데이트 가능합니다.<br>
 <a href="https://slack.com/intl/ko-kr/help/articles/22467765879315-Slack-%EC%95%84%ED%8B%80%EB%9D%BC%EC%8A%A4%EB%A1%9C-%ED%94%84%EB%A1%9C%ED%95%84-%EC%82%AC%EC%9A%A9%EC%9E%90-%EC%A7%80%EC%A0%95" target="_blank" 
      rel="noopener noreferrer" style="color: #1264a3; text-decoration: none;">📌 [참조 링크] Slack 아틀라스로 프로필 사용자 지정</a></li>
-<br>
-<img width="500" alt="image" src="asset/image/Org_Chart.png" />
-          
+<br>      
 <details style="border-radius: 6px; overflow: hidden;">
       <summary style="padding: 10px 15px; cursor: pointer; font-weight: 600; outline: none;">
         1️⃣ [초기설정1]SCIM API를 호출 하기 위한 앱 생성
@@ -233,3 +231,5 @@ SCIM API를 활용한 Atlas[Add-On기능] 설정가이드입니다.<br>
           7) 결과 확인 (200 OK면 User Update성공!!)
       </div>
           <img width="1163" alt="image" src="https://github.com/user-attachments/assets/03f37855-8858-4a36-a093-6c9a948628c4" />
+          <br>
+          <img width="500" alt="image" src="asset/image/Org_Chart.png" />
