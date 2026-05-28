@@ -567,7 +567,7 @@
         <td style="padding: 12px;">연결 해제시 상대방 조직에 사본 남지 않음</td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
-        <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">신원은 누가 관리하나요?</td>
+        <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">멤버는 누가 관리하나요?</td>
         <td colspan="2" style="padding: 12px;">각 조직에서 관리</td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
