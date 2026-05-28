@@ -383,10 +383,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
         초대받는 조직에서 Slack Connect 초대 수락시 관리자의 승인이 필요한 경우 입니다. <br>
 상대방 조직의 관리자 승인이 되지 않는 상태에서 다시 Slack Connect 초대를 보내는 경우에 발생하는 스크린샷으로, 상대방 조직의 관리자가 승인을 해야 Slack Connect 연결이 됩니다. 초대하는 사용자에게 슬랙 관리자에게 연락하도록 가이드 하시면 됩니다.<br>
       </div>
-      <div class="sol-box">
-        <span class="sol-title">해결책 2. 수동 채널 추가</span><br>
-        해당 공개 채널에 직접 들어가 봇을 멤버로 명시적 추가합니다.
-      </div>
     </div>
   </label>
 </div>
@@ -412,10 +408,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
         <span class="sol-title">해결책 1. 글자 수 청크 분할</span><br>
         Slack Connect 초대는 14일간 유효하며, 이러한 메세지가 발생하는 경우 14일이 지났거나, 또는 초대하는 조직에서 사용자나 관리자가 초대 철회를 한 경우에 발생할 수 있습니다.<br>
 새로운 Slack Connect 초대를 보내면 됩니다.<br>
-      </div>
-      <div class="sol-box">
-        <span class="sol-title">해결책 2. 스니펫 업로드 기능 활용</span><br>
-        로그나 긴 텍스트 데이터의 경우 메시지 대신 <code>files.upload</code> API를 이용해 파일 형태로 전송합니다.
       </div>
     </div>
   </label>
@@ -447,10 +439,6 @@ User B 는 조직 2의 워크스페이스 BB 의 멤버 <br>
 User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하는 경우 User B 는 워크스페이스 AA 의 멤버가 아니기 때문에 수락할 수 없는 경우 입니다.<br>
 이 경우 상대방 조직에서 해당 채널을 AA 와 BB 에서 둘다 접근 가능한 멀티워크스페이스 채널로 만들어주거나, 또는 User B 를 워크스페이스 AA 의 멤버로 추가해주어야 합니다.<br>
       </div>
-      <div class="sol-box">
-        <span class="sol-title">해결책 2. 이메일 기반 검색 연동</span><br>
-        유저 ID가 가변적이라면 <code>users.lookupByEmail</code> API를 통해 최신 ID를 매번 조회 후 전송하세요.
-      </div>
     </div>
   </label>
 </div>
@@ -477,10 +465,6 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
         상대방 조직의 멤버 A,B 를 동시에 초대하고 멤버 A 가 먼저 초대를 수락하였으나, 아직 양 조직/워크스페이스의 관리자 승인이 되지 않았을 때 멤버 B 가 초대 링크를 클릭하게 되는 경우 나오는 화면 입니다.<br>
 이때 준비되면 본인 추가 버튼을 눌러두면 향후 양 조직/워크스페이스의 관리자 승인이 되었을 때 자동으로 추가됩니다.<br>
 </div>
-      <div class="sol-box">
-        <span class="sol-title">해결책 2. 이메일 기반 검색 연동</span><br>
-        유저 ID가 가변적이라면 <code>users.lookupByEmail</code> API를 통해 최신 ID를 매번 조회 후 전송하세요.
-      </div>
     </div>
   </label>
 </div>
