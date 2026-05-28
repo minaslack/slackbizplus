@@ -547,6 +547,7 @@
           유료플랜간 추가비용없이 사용가능<br>
           Grid 플랜은 무료플랜과도 Slack Connect 연결 가능 (Sponsored)
         </td>
+        <td style="padding: 12px;"></td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">누가 대화에 사람을 추가할 수 있나요?</td>
