@@ -71,6 +71,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         <strong>Salesforce + Slack 자동 통합 출시</strong>:tada::tada:  출시일 : 2026년 05월 15일<br>
         <br>
         Enterprise/Unlimited Edition의 모든 신규 Salesforce 조직은 추가 설정 없이 즉시 사용 가능한 무료 Slack 워크스페이스(무료 플랜)를 자동으로 받게 됩니다.<br>
+        <br>
         해당 가이드는 <strong>기존 Salesforce 고객들도 무료 Slack 워크스페이스를 사용하기 위한 연동 가이드</strong>입니다.<br>
         아래 <strong>[Salesforce 채널: 구현 가이드]</strong>를 통해서 상세 가이드를 확인하실 수 있습니다.<br>
         <br>
