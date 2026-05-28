@@ -229,5 +229,6 @@ SCIM API를 활용한 Atlas[Add-On기능] 설정가이드입니다.<br>
       </div>
           <img width="1163" alt="image" src="https://github.com/user-attachments/assets/03f37855-8858-4a36-a093-6c9a948628c4" />
         </details>
+        <br>
           <img width="500" alt="image" src="asset/image/Org_Chart.png" />
 
