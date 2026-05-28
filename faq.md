@@ -542,6 +542,7 @@
         <br>
         <img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/883e5776-8f59-46b1-bcce-6c327f984d1c" />
 <br>
+        <br>
         Slack Connect 외부 사용자의 채널권한은 아래와 같습니다.<br>
         참고해서 Connect 초대 해주세요.<br>
         <br>
