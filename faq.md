@@ -556,7 +556,7 @@
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">비용</td>
         <td colspan="2" style="padding: 12px;">
           유료플랜간 추가비용없이 사용가능<br>
-          Grid 플랜은 무료플랜과도 Slack Connect 연결 가능 (Sponsored)
+          Ent+ 플랜은 무료플랜과도 Slack Connect 연결 가능 (Sponsored)
         </td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
