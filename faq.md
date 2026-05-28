@@ -538,7 +538,8 @@
         <span style="color: #1264a3; font-size: 12px;">더보기 ▼</span>
       </summary>
       <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
-        Slack Connect 외부 사용자의 채널권한은 아래와 같습니다. 참고해서 Connect 초대 해주세요.<br>
+        Slack Connect 외부 사용자의 채널권한은 아래와 같습니다.<br>
+        참고해서 Connect 초대 해주세요.<br>
         <br>
   <table style="width: 100%; border-collapse: collapse; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; color: #333; text-align: left;">
     <thead>
