@@ -306,10 +306,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
         초대받는 사람이 상대방 조직의 관리자와 확인이 필요합니다.<br>
         임시로 사용가능한 방법으로는 상대방 조직의 관리자를 Slack Connect 로 포스트/초대 가능 권한으로 초대하고, 상대방 조직의 관리자가 직접 해당 멤버를 채널에 초대하는 것입니다.<br>
       </div>
-      <div class="sol-box" style="margin-top: 12px;">
-        <span class="sol-title">해결책 2. Retry-After 헤더 활용</span><br>
-        429 에러 응답 헤더의 <code>Retry-After</code> 값만큼 대기 후 재시도 로직을 태웁니다.
-      </div>
     </div>
   </label>
 </div>
