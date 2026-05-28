@@ -606,7 +606,7 @@
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">이모지</td>
-        <td colspan="2" style="padding: 12px;">각 조직은 자체의 이모티콘 팩에 액세스할 수 있음</td>
+        <td colspan="2" style="padding: 12px;">각 조직은 자체의 이모티콘 팩에 액세스 가능</td>
       </tr>
       <tr style="border-bottom: 1px solid #e1e4e8;">
         <td style="padding: 12px; font-weight: 500; border-right: 1px solid #e1e4e8; background-color: #fafbfc;">캔버스 / 리스트</td>
