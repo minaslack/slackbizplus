@@ -234,8 +234,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #0d47a1; background: #e3f2fd; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 invalid_auth 에러</h3>
-          <p class="card-desc" style="margin: 0;">슬랙 웹훅이나 API 전송 시 인증 실패 토큰 반환 현상</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 업그레이드할 준비가 되셨나요?</h3>
+          <p class="card-desc" style="margin: 0;">공유 채널은 Slack 유료플랜을 통해 제공받게 될 기능 중 하나에 불과합니다. 초대를 수락하려면, 계정을 업그레이드하세요.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
@@ -262,8 +262,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">PAYLOAD</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 400 Bad Request</h3>
-          <p class="card-desc" style="margin: 0;">Block Kit을 구성하여 전송 시 규격이 맞지 않아 거절됨</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 초대를 수락할 수 없습니다.</h3>
+          <p class="card-desc" style="margin: 0;">연결 가능한 초직의 수를 초과하였습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/0dd86bfa-3b7f-4d60-bb8b-35e69ce48fef" style="max-width: 100%; height: auto;" />
@@ -287,9 +287,10 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">NETWORK</div>
       <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
         <div style="flex: 1; min-width: 0;">
-          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 429 Too Many Requests</h3>
+          <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 Slack Connect 초대를 수락할 수 없음</h3>
           <p class="card-desc" style="margin: 0; color: #4a4a4a; font-size: 14px; line-height: 1.5; word-break: keep-all;">
-            단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생
+            관리자가 Slack Connect 초대를 수락하는 데 필요한 권한을 공유하지 않았습니다. 관리자에게 지원을 요청할 수 있습니다.<br>
+            또는 UI상에서 수락버튼이 grey out 처리된 경우
           </p>
         </div>
         <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 300px; max-width: 45%;">
@@ -317,8 +318,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">TIMEOUT</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 504 Gateway Timeout</h3>
-          <p class="card-desc" style="margin: 0;">슬랙 엔드포인트 응답 지연 혹은 커넥션 풀 고갈 현상</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 이 채널에 참여하도록 요청해야 합니다.</h3>
+          <p class="card-desc" style="margin: 0;">누군가 이 채널을 고객님과 공유하려고 하지만 개인 정보 보호 설정에서 고객님의 참여를 허용하지 않는 것 같습니다.<br></p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/5803f3df-2cf5-4291-b0f5-70c225afc839" style="max-width: 100%; height: auto;" />
@@ -343,8 +344,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #2e7d32; background: #e8f5e9; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">CHANNEL</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 channel_not_found</h3>
-          <p class="card-desc" style="margin: 0;">메시지를 전송하려는 채널 ID가 존재하지 않거나 접근 불가한 상태</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 Something went wrong</h3>
+          <p class="card-desc" style="margin: 0;">If the problem persists, please drop us a line.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/8a58c508-87d2-4e1d-95b6-52bff6d900f3" style="max-width: 100%; height: auto;" />
@@ -368,8 +369,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #7b1fa2; background: #f3e5f5; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">PERMISSION</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 not_in_channel</h3>
-          <p class="card-desc" style="margin: 0;">봇이 참여하고 있지 않은 공개 채널에 메시지 발송을 시도함</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 관리자 승인 대기 중</h3>
+          <p class="card-desc" style="margin: 0;">채널에 가입하기 위한 이 초대를 이미 수락했습니다. 채널은 내 조직 관리자 중 한 명의 승인만 받으면 됩니다. 채널이 연계되면 Slack으로 알림 메시지가 표시됩니다.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/e633e8ba-9785-44dc-a1fd-ea7d75d26bc5" style="max-width: 100%; height: auto;" />
@@ -394,8 +395,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #00796b; background: #e0f2f1; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">SIZE</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 msg_too_long</h3>
-          <p class="card-desc" style="margin: 0;">슬랙 텍스트 필드의 최대 제한 단위를 초과하는 텍스트 전송</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 이 Slack Connect 초대를 수락할 수 없음</h3>
+          <p class="card-desc" style="margin: 0;">Slack Connect 초대는 14일 동안만 활성화됩니다. 14일이 되지 않은 경우 발송인이 초대를 취소했을 수 있습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/9d0b6594-6a07-4802-ab1d-0609d59a2c60" style="max-width: 100%; height: auto;" />
@@ -420,8 +421,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 user_not_found</h3>
-          <p class="card-desc" style="margin: 0;">DM(다이렉트 메시지) 발송 시 대상 유저 식별자 오류 혹은 탈퇴된 계정</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 초대를 수락할 수 없습니다.</h3>
+          <p class="card-desc" style="margin: 0;">팀에서 고객님이 액세스할 수 없는 워크스페이스에 이 채널을 추가한 것 같습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/3d2806e7-d48f-4c38-a287-653565e1d297" style="max-width: 100%; height: auto;" />
@@ -450,8 +451,8 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
       <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 user_not_found</h3>
-          <p class="card-desc" style="margin: 0;">DM(다이렉트 메시지) 발송 시 대상 유저 식별자 오류 혹은 탈퇴된 계정</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 채널이 곧 준비됩니다.</h3>
+          <p class="card-desc" style="margin: 0;">이 채널은 계속 진행하기 전에 관리자의 승인을 받아야합니다. 원하는 경우, 준비가 됐을 때 고객님을 추가해드릴 수 있습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/d13fd43f-bb9e-471b-8873-7f4d9aa2215a" style="max-width: 100%; height: auto;" />
