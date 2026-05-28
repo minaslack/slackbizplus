@@ -18,8 +18,8 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
       <div style="flex-shrink: 0;">
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack CRM</div>
-        Slack 안에서 대화하듯 고객을 관리하고,<br>
-        Salesforce 기반의 자동 프로비저닝과 Slackbot이 메모·후속 조치·고객 조사까지 처리해 드립니다.<br>
+        Slack에서 바로 이어지는 고객 여정<br>
+        Salesforce 데이터와 연동해 메모·알림·후속 조치를 자동으로 처리합니다.<br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다. 
 <table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 14px; margin: 20px 0;">
   <thead>
@@ -44,6 +44,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   </tbody>
 </table>
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">📌 설정 가이드</div>
+        실행 후, 실제 연동시간은 <strong>5분</strong>정도 소요됩니다.
         <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
           <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackCRM.mp4" type="video/mp4">
         </video>
