@@ -68,7 +68,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
       <div style="flex-shrink: 0;">
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack X Salesforce</div>
-        <strong>Salesforce + Slack 자동 통합 출시:tada:</strong> 출시일 : 2026년 05월 15일<br>
+        <strong>Salesforce + Slack 자동 통합 출시</strong>:tada::tada:  출시일 : 2026년 05월 15일<br>
         <br>
         Enterprise/Unlimited Edition의 모든 신규 Salesforce 조직은 추가 설정 없이 즉시 사용 가능한 무료 Slack 워크스페이스(무료 플랜)를 자동으로 받게 됩니다.<br>
         해당 가이드는 <strong>기존 Salesforce 고객들도 무료 Slack 워크스페이스를 사용하기 위한 연동 가이드</strong>입니다.<br>
@@ -103,8 +103,10 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
       <div style="flex-shrink: 0;">
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack X Salesforce</div>
-        Salesforce 채널은 팀 대화와 고객 데이터를 하나로 연결해 더 스마트하고 빠른 협업을 가능하게 합니다.<br>
-        Salesforce 채널은 레코드별 전용 채널을 제공하며, Salesforce 접근 권한 여부에 따라 데이터 열람·편집 가능 여부가 달라지지만 모든 팀원이 Slack에서 협업할 수 있습니다.<br>
+        <strong>Salesforce + Slack 자동 통합 출시</strong>:tada::tada:  출시일 : 2026년 05월 15일<br>
+        <br>
+        Enterprise/Unlimited Edition의 모든 신규 Salesforce 조직은 추가 설정 없이 즉시 사용 가능한 무료 Slack 워크스페이스(무료 플랜)를 자동으로 받게 됩니다.<br>
+        해당 가이드는 <strong>기존 Salesforce 고객들도 무료 Slack 워크스페이스를 사용하기 위한 연동 가이드</strong>입니다.<br>
         아래 <strong>[Salesforce 채널: 구현 가이드]</strong>를 통해서 상세 가이드를 확인하실 수 있습니다.<br>
         <br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다.<br>
