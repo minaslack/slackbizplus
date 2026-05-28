@@ -234,16 +234,15 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
         <div style="font-weight: bold; color: #0d47a1; background: #e3f2fd; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px;">AUTH</div>
         <h3 style="margin: 8px 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 invalid_auth 에러</h3>
         <p class="card-desc">슬랙 웹훅이나 API 전송 시 인증 실패 토큰 반환 현상</p>
+         <img width="1408" height="548" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" />
       </div>
       <div class="hint-text"></div>
       <div class="solution-area">
         <div class="sol-box">
-          <span class="sol-title">해결책 1. 토큰 스코프 재검토</span><br>
-          봇 토큰에 <code>chat:write</code> 권한이 누락되었는지 확인하세요.
-        </div>
-        <div class="sol-box">
-          <span class="sol-title">해결책 2. 워크스페이스 앱 재인증</span><br>
-          스코프 변경 후 <b>Reinstall to Workspace</b>를 진행해야 토큰이 갱신됩니다.
+          <span class="sol-title">해결책 워크스페이스 앱 재인증</span><br>
+          초대 하고자 하는 사용자의 워크스페이스가 유료플랜인지 확인하세요. <br>
+Slack Connect 는 기본적으로 유료플랜간에 사용이 가능하며, 무료 플랜은 Slack Connect 을 사용할 수 없습니다.<br>
+다만 예외적으로 초대를 보내는 조직이 Grid 또는 Ent+ 라면 조직에서 허용하는 경우 무료워크스페이스 조직과 Slack Connect 를 통해 연결할 수 있습니다.<br>
         </div>
       </div>
     </label>
