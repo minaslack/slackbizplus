@@ -285,12 +285,12 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <label for="f3" class="focus-card">
     <div class="card-body">
       <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">NETWORK</div>
-      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
+      <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 429 Too Many Requests</h3>
           <p class="card-desc" style="margin: 0;">단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생</p>
         </div>
-        <div style="flex-shrink: 0;">
+        <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 100%;">
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/96baa30d-579e-4bd3-b8d3-160e4dc0b8fa" style="max-width: 100%; height: auto;" />
           <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/07f3e7a6-bd7f-4ddd-a098-2245f1343223" style="max-width: 100%; height: auto;" />
         </div>
