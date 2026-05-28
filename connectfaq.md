@@ -1,4 +1,4 @@
-# 🛠️ Slack Connector Issue Tracker
+# 🛠️ Slack Connect Issue Guide
 
 Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한 일반적인 방법을 안내합니다.<br>
 본 가이드로 해결이 되지 않는 부분은 /feedback 또는 feedback@slack.com 을 통하여 Slack CE 팀의 지원을 받으시는 것을 권장합니다.<br>
