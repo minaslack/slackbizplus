@@ -532,6 +532,14 @@
         곧 업로드 예정(5월 내)
       </div>
       <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
+</div>
+    </details>
+      <details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
+      <summary style="padding: 12px 15px; background: #fafbfc; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; outline: none;">
+        <span>Slack Connect_외부 사용자의 채널 권한</span>
+        <span style="color: #1264a3; font-size: 12px;">더보기 ▼</span>
+      </summary>
+      <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
   <table style="width: 100%; border-collapse: collapse; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.5; color: #333; text-align: left;">
     <thead>
       <tr style="background-color: #f6f8fa; border-top: 1px solid #e1e4e8; border-bottom: 1px solid #e1e4e8;">
