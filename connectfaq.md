@@ -265,7 +265,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">Block Kit을 구성하여 전송 시 규격이 맞지 않아 거절됨</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/0dd86bfa-3b7f-4d60-bb8b-35e69ce48fef" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -273,7 +273,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="solution-area">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 최상위 fallback 필드 삽입</span><br>
-        <code>blocks</code> 전송 시 최상위 <code>text</code> 필드를 누락했는지 확인하세요.
+하나의 채널에 250개 이상의 조직이 연결되어있는 경우에는 더이상 연결할 수 없습니다.
       </div>
       <div class="sol-box">
         <span class="sol-title">해결책 2. 공식 빌더 검증</span><br>
@@ -294,7 +294,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">단시간 내 과도한 메시지 발송으로 인한 API 호출 제한 발생</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/96baa30d-579e-4bd3-b8d3-160e4dc0b8fa" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -302,7 +302,9 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="solution-area">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 메시지 발송 큐(Queue) 도입</span><br>
-        인메모리 큐나 Redis를 사용해 초당 1회 스로틀링 기준을 맞추도록 제어합니다.
+        상대방 조직에서 일반 멤버가 Slack Connect 초대를 수락할 수 없도록 설정해 둔 경우이거나 또는 초대 받는 사람이 멤버가 아니고 Guest 인 경우 입니다.
+초대받는 사람이 상대방 조직의 관리자와 확인이 필요합니다.
+임시로 사용가능한 방법으로는 상대방 조직의 관리자를 Slack Connect 로 포스트/초대 가능 권한으로 초대하고, 상대방 조직의 관리자가 직접 해당 멤버를 채널에 초대하는 것입니다.
       </div>
       <div class="sol-box">
         <span class="sol-title">해결책 2. Retry-After 헤더 활용</span><br>
@@ -323,7 +325,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">슬랙 엔드포인트 응답 지연 혹은 커넥션 풀 고갈 현상</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/5803f3df-2cf5-4291-b0f5-70c225afc839" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -331,7 +333,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="solution-area">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 비동기(Asynchronous) 호출 전환</span><br>
-        요청을 보낸 후 응답을 대기하지 않고, 웹훅을 Event-Driven 방식으로 비동기 처리합니다.
+        포스트만 가능한 권한을 가지고 있는 채널에서, 초대링크를 생성한뒤, 또 다른 멤버가 해당 링크를 통해 초대를 수락하는 경우 발생합니다. 
+포스트만 가능한 권한만 있을 경우 링크를 통해서는 수락할 수 없으며, 채널을 소유한 쪽에서 링크가 아닌 이메일을 지정하여 초대를 해주어야 합니다.
       </div>
       <div class="sol-box">
         <span class="sol-title">해결책 2. HTTP 커넥션 타임아웃 튜닝</span><br>
@@ -352,7 +355,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">메시지를 전송하려는 채널 ID가 존재하지 않거나 접근 불가한 상태</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/8a58c508-87d2-4e1d-95b6-52bff6d900f3" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -360,7 +363,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="solution-area">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 봇을 채널에 초대</span><br>
-        비공개 채널의 경우, 슬랙 대화창에 <code>/invite @봇이름</code>을 입력하여 명시적으로 초대해야 합니다.
+/feedback 또는  feedback@slack.com 을 통해 문의하시기 바랍니다. 
       </div>
       <div class="sol-box">
         <span class="sol-title">해결책 2. 채널 ID 검증</span><br>
@@ -381,7 +384,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">봇이 참여하고 있지 않은 공개 채널에 메시지 발송을 시도함</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/e633e8ba-9785-44dc-a1fd-ea7d75d26bc5" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -389,7 +392,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="solution-area">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 자동으로 채널 조인 처리</span><br>
-        메시지 전송 전에 <code>conversations.join</code> API를 호출하여 봇을 채널에 먼저 입장시킵니다.
+        초대받는 조직에서 Slack Connect 초대 수락시 관리자의 승인이 필요한 경우 입니다. 
+상대방 조직의 관리자 승인이 되지 않는 상태에서 다시 Slack Connect 초대를 보내는 경우에 발생하는 스크린샷으로, 상대방 조직의 관리자가 승인을 해야 Slack Connect 연결이 됩니다. 초대하는 사용자에게 슬랙 관리자에게 연락하도록 가이드 하시면 됩니다.
       </div>
       <div class="sol-box">
         <span class="sol-title">해결책 2. 수동 채널 추가</span><br>
@@ -410,7 +414,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">슬랙 텍스트 필드의 최대 제한 단위를 초과하는 텍스트 전송</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/9d0b6594-6a07-4802-ab1d-0609d59a2c60" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -418,7 +422,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="solution-area">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 글자 수 청크 분할</span><br>
-        텍스트 본문이 4,000자를 넘지 않도록 코드가 자동으로 문자열을 분할(Chunking)해 순차 전송하게 합니다.
+        Slack Connect 초대는 14일간 유효하며, 이러한 메세지가 발생하는 경우 14일이 지났거나, 또는 초대하는 조직에서 사용자나 관리자가 초대 철회를 한 경우에 발생할 수 있습니다.
+새로운 Slack Connect 초대를 보내면 됩니다.
       </div>
       <div class="sol-box">
         <span class="sol-title">해결책 2. 스니펫 업로드 기능 활용</span><br>
@@ -439,7 +444,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">DM(다이렉트 메시지) 발송 시 대상 유저 식별자 오류 혹은 탈퇴된 계정</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/3d2806e7-d48f-4c38-a287-653565e1d297" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -447,8 +452,42 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="solution-area">
       <div class="sol-box">
         <span class="sol-title">해결책 1. 유저 ID 매핑 점검</span><br>
-        디스플레이 네임(이름)이 아닌, <code>U</code>로 시작하는 고유 유저 ID(예: U123456)를 사용했는지 검증하세요.
+        아래와 같은 시나리오에 발생할 수 있습니다.
+초대 받는 쪽이 그리드 환경인데, 다수의 사용자를 초대하는 경우.  조직1 의 사용자 X 가 조직2 의 사용자 A,B 를 초대하는 시나리오 입니다.
+User A 는 조직 2의 워크스페이스 AA 의 멤버
+User B 는 조직 2의 워크스페이스 BB 의 멤버 
+User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하는 경우 User B 는 워크스페이스 AA 의 멤버가 아니기 때문에 수락할 수 없는 경우 입니다.
+이 경우 상대방 조직에서 해당 채널을 AA 와 BB 에서 둘다 접근 가능한 멀티워크스페이스 채널로 만들어주거나, 또는 User B 를 워크스페이스 AA 의 멤버로 추가해주어야 합니다.</div>
+      <div class="sol-box">
+        <span class="sol-title">해결책 2. 이메일 기반 검색 연동</span><br>
+        유저 ID가 가변적이라면 <code>users.lookupByEmail</code> API를 통해 최신 ID를 매번 조회 후 전송하세요.
       </div>
+    </div>
+  </label>
+</div>
+
+<div class="grid-item cat-auth">
+  <input type="checkbox" id="f8" class="focus-trigger">
+  <label for="f8" class="focus-card">
+    <div class="card-body">
+      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
+        <div style="flex: 1;">
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 user_not_found</h3>
+          <p class="card-desc" style="margin: 0;">DM(다이렉트 메시지) 발송 시 대상 유저 식별자 오류 혹은 탈퇴된 계정</p>
+        </div>
+        <div style="flex-shrink: 0;">
+          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/d13fd43f-bb9e-471b-8873-7f4d9aa2215a" style="max-width: 100%; height: auto;" />
+        </div>
+      </div>
+    </div>
+    <div class="hint-text"></div>
+    <div class="solution-area">
+      <div class="sol-box">
+        <span class="sol-title">해결책 1. 유저 ID 매핑 점검</span><br>
+        상대방 조직의 멤버 A,B 를 동시에 초대하고 멤버 A 가 먼저 초대를 수락하였으나, 아직 양 조직/워크스페이스의 관리자 승인이 되지 않았을 때 멤버 B 가 초대 링크를 클릭하게 되는 경우 나오는 화면 입니다.
+이때 준비되면 본인 추가 버튼을 눌러두면 향후 양 조직/워크스페이스의 관리자 승인이 되었을 때 자동으로 추가됩니다.
+</div>
       <div class="sol-box">
         <span class="sol-title">해결책 2. 이메일 기반 검색 연동</span><br>
         유저 ID가 가변적이라면 <code>users.lookupByEmail</code> API를 통해 최신 ID를 매번 조회 후 전송하세요.
