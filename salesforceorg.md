@@ -133,7 +133,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
     body {
       margin: 0;
       padding: 40px 20px;
-      background-color: #f8f9fa;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
