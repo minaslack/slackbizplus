@@ -525,7 +525,7 @@
     <h3 style="font-size: 16px; color: #616061; margin-bottom: 10px; border-bottom: 1px solid #e1e4e8; padding-bottom: 5px;">🌐 외부 협업 및 권한 설정</h3>
       <details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
       <summary style="padding: 12px 15px; background: #fafbfc; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; outline: none;">
-        <span>Slack Connect 외부 사용자의 채널 권한 설정</span>
+        <span>[작성중]Slack Connect 외부 사용자의 채널 권한 설정</span>
         <span style="color: #1264a3; font-size: 12px;">더보기 ▼</span>
       </summary>
       <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
@@ -612,7 +612,7 @@
     </details>
           <details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
       <summary style="padding: 12px 15px; background: #fafbfc; cursor: pointer; font-weight: 600; display: flex; justify-content: space-between; align-items: center; outline: none;">
-        <span>Slack Connect 및 게스트 초대를 관리자 승인 하에 운영하는 방법</span>
+        <span>[작성중]Slack Connect 및 게스트 초대를 관리자 승인 하에 운영하는 방법</span>
         <span style="color: #1264a3; font-size: 12px;">더보기 ▼</span>
       </summary>
       <div style="padding: 15px; background: #fff; border-top: 1px solid #e1e4e8;">
@@ -621,7 +621,7 @@
     </details>
 <div style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
   <a href="https://slackforadmin.github.io/slackbizplus/#/" target="_blank" style="padding: 12px 15px; background: #fafbfc; font-weight: 600; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: #333;">
-    <span>Slack Connect Issue Guide</span>
+    <span>[작성중]Slack Connect Issue Guide</span>
     <span style="color: #1264a3; font-size: 12px;">바로가기 ▶</span>
   </a>
 </div>
