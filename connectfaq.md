@@ -181,7 +181,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 
   /* 해결책 제목 크기도 본문 크기에 맞춰 16px로 소폭 조정 */
   .sol-title {
-    font-size: 16px;
+    font-size: 14px;
     color: #4a154b;
     font-weight: bold;
     display: inline-block;
