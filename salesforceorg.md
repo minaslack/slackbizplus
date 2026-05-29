@@ -77,7 +77,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         <br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다.<br>
         <br>
-        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">📌 설정 가이드</div>
+        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">📌 연동 가이드</div>
         <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
           <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackCRM.mp4" type="video/mp4">
         </video>
