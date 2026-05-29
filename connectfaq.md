@@ -265,8 +265,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <span class="sol-title">해결책 1. 최상위 fallback 필드 삽입</span><br>
-하나의 채널에 250개 이상의 조직이 연결되어있는 경우에는 더이상 연결할 수 없습니다.
+<b>하나의 채널에 250개 이상의 조직이 연결되어있는 경우에는 더이상 연결할 수 없습니다.</b>
       </div>
     </div>
   </label>
