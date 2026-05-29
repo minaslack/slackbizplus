@@ -73,8 +73,8 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         Enterprise/Unlimited Edition의 모든 신규 Salesforce 조직은 추가 설정 없이 즉시 사용 가능한 무료 Slack 워크스페이스(무료 플랜)를 자동으로 받게 됩니다.<br>
         <br>
         해당 가이드는 <strong>기존 Salesforce 고객들도 무료 플랜이나 기존 Slack 워크스페이스를 함께 사용할 수 있는 연동 가이드</strong>입니다.<br>
-        영상 가이드를 통해 연동 방법을 확인하실 수 있고,<br>
-        아래 <strong>[Salesforce 채널: 구현 가이드]</strong>를 통해서 상세 가이드를 확인하실 수 있습니다.<br>
+        영상 가이드를 통해 연동 방법을, <strong>[Salesforce 채널: 구현 가이드]</strong>를 통해서 상세 가이드를 확인하실 수 있습니다.<br>
+        
         <br>
         💡 추가 문의는 영업대표에게 연락 부탁드립니다.<br>
         <br>
