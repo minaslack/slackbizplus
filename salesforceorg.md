@@ -115,6 +115,10 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
           <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackCRM.mp4" type="video/mp4">
         </video>
+                <br>
+        <strong>참고 사항 : </strong><br>
+        <strong>선택한 개체에 Slack 버튼 표시 기능</strong>은 <strong>Release 262</strong>이상에 적용됩니다.<br>
+         * 내 Org 릴리즈 버전 확인 방법 : 내 Org URL주소 + /releaseVersion.jsp<br>
       </div>
     <br>
   </div>
