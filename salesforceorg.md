@@ -90,39 +90,6 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
     <br>
   </div>
 </details>
-<details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;" class="accordion-group">
-  <summary style="padding: 14px 16px; cursor: pointer; background: #FFFFFF; font-weight: 700; color: #24292e; display: flex; align-items: center; justify-content: space-between; border-radius: 8px 8px 0 0; list-style: none;">
-      <div style="display: flex; align-items: center; gap: 12px;">
-          <img height="32" style="border-radius: 6px;" alt="image" src="asset/image/SlackXSalesforce.png" /> 
-          <span>[작성중]Slack X Salesforce 연동 가이드_기존 Slack 워크스페이스 연결</span>
-      </div>
-      <style>
-          summary::-webkit-details-marker { display: none; } /* 맥/아이폰용 기본 화살표 삭제 */
-          .arrow-icon { transition: transform 0.2s ease; color: #9aa2ac; font-size: 14px; }
-          details[open] .arrow-icon { transform: rotate(90deg); color: #24292e; }
-      </style>
-      <span class="arrow-icon">❯</span>
-  </summary>
-  <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
-      <div style="flex-shrink: 0;">
-        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">✔️ Slack X Salesforce</div>
-        해당 가이드는 <strong>기존 Salesforce & Slack을 직접 연동해서 사용하기 위한 가이드</strong>입니다.<br>
-        아래 <strong>[Salesforce 채널: 구현 가이드]</strong>를 통해서 상세 가이드를 확인하실 수 있습니다.<br>
-        <br>
-        💡 추가 문의는 영업대표에게 연락 부탁드립니다.<br>
-        <br>
-        <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">📌 설정 가이드</div>
-        <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
-          <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackCRM.mp4" type="video/mp4">
-        </video>
-                <br>
-        <strong>참고 사항 : </strong><br>
-        <strong>선택한 개체에 Slack 버튼 표시 기능</strong>은 <strong>Release 262</strong>이상에 적용됩니다.<br>
-         * 내 Org 릴리즈 버전 확인 방법 : 내 Org URL주소 + /releaseVersion.jsp<br>
-      </div>
-    <br>
-  </div>
-</details>
 <br>
 <!DOCTYPE html>
 <html lang="ko">
