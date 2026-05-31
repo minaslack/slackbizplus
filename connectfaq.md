@@ -337,7 +337,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-/feedback 또는 feedback@slack.com 을 통해 문의하시기 바랍니다.
+<b>/feedback</b> 또는 <b>feedback@slack.com</b>을 통해 문의하시기 바랍니다.
       </div>
     </div>
   </label>
