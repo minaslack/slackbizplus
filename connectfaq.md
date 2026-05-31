@@ -396,11 +396,11 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   </label>
 </div>
 
-<div class="grid-item cat-auth">
+<div class="grid-item cat-invite">
   <input type="checkbox" id="f8" class="focus-trigger">
   <label for="f8" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
+      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">초대 수락</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 초대를 수락할 수 없습니다.</h3>
