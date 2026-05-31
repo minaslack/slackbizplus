@@ -313,7 +313,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">누군가 이 채널을 고객님과 공유하려고 하지만 개인 정보 보호 설정에서 고객님의 참여를 허용하지 않는 것 같습니다.<br></p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/5803f3df-2cf5-4291-b0f5-70c225afc839" style="max-width: 100%; height: auto;" />
+          <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/5803f3df-2cf5-4291-b0f5-70c225afc839" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
