@@ -328,8 +328,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #2e7d32; background: #e8f5e9; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">문제 발생</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 Something went wrong</h3>
-          <p class="card-desc" style="margin: 0;">If the problem persists, please drop us a line.</p>
+          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 문제가 발생했습니다.</h3>
+          <p class="card-desc" style="margin: 0;">Something went wrong<br>If the problem persists, please drop us a line.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/8a58c508-87d2-4e1d-95b6-52bff6d900f3" style="max-width: 100%; height: auto;" />
