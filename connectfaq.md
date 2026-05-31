@@ -256,7 +256,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-하나의 채널에는 <b>최대 250개의 조직</b>까지만 연결할 수 있습니다. 250개를 초과할 경우 더 이상 새로운 조직을 추가할 수 없습니다.
+        하나의 채널에는 <b>최대 250개의 조직</b>까지만 연결할 수 있습니다.<br>
+        250개를 초과할 경우 더 이상 새로운 조직을 추가할 수 없습니다.
       </div>
     </div>
   </label>
