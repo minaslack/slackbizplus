@@ -312,7 +312,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <span class="sol-title">해결책 1. 비동기(Asynchronous) 호출 전환</span><br>
         포스트만 가능한 권한을 가지고 있는 채널에서, 초대링크를 생성한뒤, 또 다른 멤버가 해당 링크를 통해 초대를 수락하는 경우 발생합니다.<br>
 포스트만 가능한 권한만 있을 경우 링크를 통해서는 수락할 수 없으며, 채널을 소유한 쪽에서 링크가 아닌 이메일을 지정하여 초대를 해주어야 합니다.<br>
       </div>
