@@ -228,7 +228,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        초대하려는 <strong>상대방 워크스페이스가 유료 플랜인지</strong> 먼저 확인하세요. (단, 우리 조직이 Ent+ 플랜이라면 무료 워크스페이스도 초대 가능)<br>
+        초대하려는 <strong>상대방 워크스페이스가 유료 플랜인지</strong> 먼저 확인하세요.<br>
+        (단, 우리 조직이 Ent+ 플랜이라면 무료 워크스페이스도 초대 가능)<br>
         * 기본 원칙: Slack Connect는 <strong>유료 플랜 워크스페이스 간</strong>에만 연결 가능 <strong>(무료 플랜은 사용 불가)</strong><br>
         * 예외 조건: 초대를 보내는 측이 <strong>Ent+플랜</strong>이며 조직 내에서 허용된 경우, <strong>무료 워크스페이스와도 연결 가능</strong><br>
       </div>
