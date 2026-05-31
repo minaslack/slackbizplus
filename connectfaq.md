@@ -407,7 +407,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">팀에서 고객님이 액세스할 수 없는 워크스페이스에 이 채널을 추가한 것 같습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/3d2806e7-d48f-4c38-a287-653565e1d297" style="max-width: 100%; height: auto;" />
+          <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/3d2806e7-d48f-4c38-a287-653565e1d297" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
