@@ -397,9 +397,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <span class="sol-title">해결책 1. 글자 수 청크 분할</span><br>
         Slack Connect 초대는 14일간 유효하며, 이러한 메세지가 발생하는 경우 14일이 지났거나, 또는 초대하는 조직에서 사용자나 관리자가 초대 철회를 한 경우에 발생할 수 있습니다.<br>
-새로운 Slack Connect 초대를 보내면 됩니다.<br>
+<b>새로운 Slack Connect 초대를 보내면 됩니다.</b><br>
       </div>
     </div>
   </label>
