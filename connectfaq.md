@@ -228,7 +228,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <span class="sol-title">[해결책] 초대 워크스페이스 플랜 확인</span><br>
         <strong>초대 하고자 하는 사용자의 워크스페이스가 유료플랜인지 확인하세요.</strong><br>
         Slack Connect 는 기본적으로 유료플랜간에 사용이 가능하며, 무료 플랜은 Slack Connect 을 사용할 수 없습니다.<br>
         다만 예외적으로 초대를 보내는 조직이 Ent+ 라면 조직에서 허용하는 경우 무료워크스페이스 조직과 Slack Connect 를 통해 연결할 수 있습니다.
@@ -285,7 +284,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area" style="margin-top: 16px;">
       <div class="sol-box">
-        <span class="sol-title">해결책 1. 메시지 발송 큐(Queue) 도입</span><br>
         상대방 조직에서 일반 멤버가 Slack Connect 초대를 수락할 수 없도록 설정해 둔 경우이거나 또는 초대 받는 사람이 멤버가 아니고 Guest 인 경우 입니다.<br>
         초대받는 사람이 상대방 조직의 관리자와 확인이 필요합니다.<br>
         임시로 사용가능한 방법으로는 상대방 조직의 관리자를 Slack Connect 로 포스트/초대 가능 권한으로 초대하고, 상대방 조직의 관리자가 직접 해당 멤버를 채널에 초대하는 것입니다.<br>
