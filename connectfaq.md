@@ -226,7 +226,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #0d47a1; background: #e3f2fd; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 업그레이드할 준비가 되셨나요?</h3>
+          <h3 style="margin: 0 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 업그레이드할 준비가 되셨나요?</h3>
           <p class="card-desc" style="margin: 0;">공유 채널은 Slack 유료플랜을 통해 제공받게 될 기능 중 하나에 불과합니다. 초대를 수락하려면, 계정을 업그레이드하세요.</p>
         </div>
         <div style="flex-shrink: 0;">
