@@ -328,7 +328,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 문제가 발생했습니다.</h3>
-          <p class="card-desc" style="margin: 0;">Something went wrong<br>If the problem persists, please drop us a line.</p>
+          <p class="card-desc" style="margin: 0;"><b>Something went wrong</b><br>If the problem persists, please drop us a line.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/8a58c508-87d2-4e1d-95b6-52bff6d900f3" style="max-width: 100%; height: auto;" />
