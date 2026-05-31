@@ -274,7 +274,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0; color: #4a4a4a; font-size: 14px; line-height: 1.5; word-break: keep-all;">
             관리자가 Slack Connect 초대를 수락하는 데 필요한 권한을 공유하지 않았습니다. 관리자에게 지원을 요청할 수 있습니다.<br>
             <br>
-            또는 UI상에서 수락버튼이 grey out 처리된 경우
+            또는 UI상에서 [수락]버튼이 grey out 처리된 경우
           </p>
         </div>
         <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 300px; max-width: 45%;">
