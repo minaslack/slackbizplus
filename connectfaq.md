@@ -258,7 +258,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">연결 가능한 초직의 수를 초과하였습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/0dd86bfa-3b7f-4d60-bb8b-35e69ce48fef" style="max-width: 100%; height: auto;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/0dd86bfa-3b7f-4d60-bb8b-35e69ce48fef" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -285,8 +285,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           </p>
         </div>
         <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 300px; max-width: 45%;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/96baa30d-579e-4bd3-b8d3-160e4dc0b8fa" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/07f3e7a6-bd7f-4ddd-a098-2245f1343223" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/96baa30d-579e-4bd3-b8d3-160e4dc0b8fa" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/07f3e7a6-bd7f-4ddd-a098-2245f1343223" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
         </div>
       </div>
     </div>
@@ -313,7 +313,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">누군가 이 채널을 고객님과 공유하려고 하지만 개인 정보 보호 설정에서 고객님의 참여를 허용하지 않는 것 같습니다.<br></p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/5803f3df-2cf5-4291-b0f5-70c225afc839" style="max-width: 100%; height: auto;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/5803f3df-2cf5-4291-b0f5-70c225afc839" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -339,7 +339,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">If the problem persists, please drop us a line.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/8a58c508-87d2-4e1d-95b6-52bff6d900f3" style="max-width: 100%; height: auto;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/8a58c508-87d2-4e1d-95b6-52bff6d900f3" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -364,7 +364,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">채널에 가입하기 위한 이 초대를 이미 수락했습니다. 채널은 내 조직 관리자 중 한 명의 승인만 받으면 됩니다. 채널이 연계되면 Slack으로 알림 메시지가 표시됩니다.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/e633e8ba-9785-44dc-a1fd-ea7d75d26bc5" style="max-width: 100%; height: auto;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/e633e8ba-9785-44dc-a1fd-ea7d75d26bc5" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -390,7 +390,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">Slack Connect 초대는 14일 동안만 활성화됩니다. 14일이 되지 않은 경우 발송인이 초대를 취소했을 수 있습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/9d0b6594-6a07-4802-ab1d-0609d59a2c60" style="max-width: 100%; height: auto;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/9d0b6594-6a07-4802-ab1d-0609d59a2c60" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -416,7 +416,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">팀에서 고객님이 액세스할 수 없는 워크스페이스에 이 채널을 추가한 것 같습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/3d2806e7-d48f-4c38-a287-653565e1d297" style="max-width: 100%; height: auto;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/3d2806e7-d48f-4c38-a287-653565e1d297" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
@@ -448,8 +448,8 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
           </p>
         </div>
         <div style="flex-shrink: 0; display: flex; flex-direction: column; gap: 8px; width: 300px; max-width: 45%;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/d13fd43f-bb9e-471b-8873-7f4d9aa2215a" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/f6e2e707-c35b-4536-9f8f-2b403f3a2837" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/d13fd43f-bb9e-471b-8873-7f4d9aa2215a" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/f6e2e707-c35b-4536-9f8f-2b403f3a2837" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
         </div>
       </div>
     </div>
