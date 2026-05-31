@@ -41,8 +41,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   #tab-invite:checked ~ .filter-bar label[for="tab-invite"],
   #tab-timeout:checked ~ .filter-bar label[for="tab-timeout"],
   #tab-issue:checked ~ .filter-bar label[for="tab-issue"],
-  #tab-permission:checked ~ .filter-bar label[for="tab-permission"],
-  #tab-user:checked ~ .filter-bar label[for="tab-user"] {
+  #tab-permission:checked ~ .filter-bar label[for="tab-permission"] {
     background: #4a154b;
     color: #ffffff;
     border-color: #4a154b;
@@ -55,8 +54,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   #tab-timeout:checked ~ .card-grid .grid-item:not(.cat-timeout),
   #tab-issue:checked ~ .card-grid .grid-item:not(.cat-issue),
   #tab-permission:checked ~ .card-grid .grid-item:not(.cat-permission),
-  #tab-ready:checked ~ .card-grid .grid-item:not(.cat-ready),
-  #tab-user:checked ~ .card-grid .grid-item:not(.cat-user) {
+  #tab-ready:checked ~ .card-grid .grid-item:not(.cat-ready) {
     display: none !important;
   }
 
@@ -199,7 +197,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 <input type="radio" id="tab-issue" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-permission" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-ready" name="cat-filter" class="filter-trigger">
-<input type="radio" id="tab-user" name="cat-filter" class="filter-trigger">
 
 <div class="filter-bar">
   <label for="tab-all" class="filter-btn">ALL</label>
@@ -208,8 +205,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <label for="tab-timeout" class="filter-btn">참여 요청</label>
   <label for="tab-issue" class="filter-btn">문제 발생</label>
   <label for="tab-permission" class="filter-btn">승인 대기</label>
-    <label for="tab-ready" class="filter-btn">채널 준비</label>
-  <label for="tab-user" class="filter-btn">USER</label>
+  <label for="tab-ready" class="filter-btn">채널 준비</label>
 </div>
 
 <div class="card-grid">
