@@ -207,7 +207,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <label for="tab-invite" class="filter-btn">초대 수락</label>
   <label for="tab-timeout" class="filter-btn">참여 요청</label>
   <label for="tab-issue" class="filter-btn">문제 발생</label>
-  <label for="tab-permission" class="filter-btn">PERMISSION</label>
+  <label for="tab-permission" class="filter-btn">승인 대기</label>
     <label for="tab-ready" class="filter-btn">채널 준비</label>
   <label for="tab-user" class="filter-btn">USER</label>
 </div>
@@ -352,7 +352,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <input type="checkbox" id="f6" class="focus-trigger">
   <label for="f6" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #7b1fa2; background: #f3e5f5; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">PERMISSION</div>
+      <div style="font-weight: bold; color: #7b1fa2; background: #f3e5f5; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">승인 대기</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 관리자 승인 대기 중</h3>
