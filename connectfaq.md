@@ -347,8 +347,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <span class="sol-title">해결책 1. 봇을 채널에 초대</span><br>
-/feedback 또는  feedback@slack.com 을 통해 문의하시기 바랍니다. 
+<b>/feedback 또는  feedback@slack.com 을 통해 문의하시기 바랍니다.</b>
       </div>
     </div>
   </label>
