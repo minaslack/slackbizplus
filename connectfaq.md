@@ -310,7 +310,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">TIMEOUT</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 이 채널에 참여하도록 요청해야 합니다.</h3>
+          <h3 style="margin: 0 0 4px 0; font-size: 17px; color: #1d1c1d;">🚨 이 채널에 참여하도록 요청해야 합니다.</h3>
           <p class="card-desc" style="margin: 0;">누군가 이 채널을 고객님과 공유하려고 하지만 개인 정보 보호 설정에서 고객님의 참여를 허용하지 않는 것 같습니다.<br></p>
         </div>
         <div style="flex-shrink: 0;">
@@ -387,7 +387,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="font-weight: bold; color: #00796b; background: #e0f2f1; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">SIZE</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
-          <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 이 Slack Connect 초대를 수락할 수 없음</h3>
+          <h3 style="margin: 0 0 4px 0; font-size: 17px; color: #1d1c1d;">🚨 이 Slack Connect 초대를 수락할 수 없음</h3>
           <p class="card-desc" style="margin: 0;">Slack Connect 초대는 14일 동안만 활성화됩니다. 14일이 되지 않은 경우 발송인이 초대를 취소했을 수 있습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
