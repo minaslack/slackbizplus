@@ -298,7 +298,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
   <input type="checkbox" id="f4" class="focus-trigger">
   <label for="f4" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">참여 요청</div>
+      <div style="font-weight: bold; color: #78281F; background: #F9EBEA; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">참여 요청</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 17px; color: #1d1c1d;">🚨 이 채널에 참여하도록 요청해야 합니다.</h3>
@@ -429,7 +429,7 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
   <input type="checkbox" id="f9" class="focus-trigger">
   <label for="f9" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">채널 준비</div>
+      <div style="font-weight: bold; color: #7D6608; background: #FEF9E7; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">채널 준비</div>
       <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
         <div style="flex: 1; min-width: 0;">
           <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 채널이 곧 준비됩니다.</h3>
