@@ -255,7 +255,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 초대를 수락할 수 없습니다.</h3>
-          <p class="card-desc" style="margin: 0;">연결 가능한 초직의 수를 초과하였습니다.</p>
+          <p class="card-desc" style="margin: 0;">연결 가능한 조직의 수를 초과하였습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/0dd86bfa-3b7f-4d60-bb8b-35e69ce48fef" style="max-width: 100%; height: auto;" />
