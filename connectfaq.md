@@ -230,7 +230,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">공유 채널은 Slack 유료플랜을 통해 제공받게 될 기능 중 하나에 불과합니다. 초대를 수락하려면, 계정을 업그레이드하세요.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
+          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/def830a8-1111-4faf-80ec-e3f495cfa92a" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
