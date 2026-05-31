@@ -430,8 +430,8 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
 </div>
 
 <div class="grid-item cat-ready">
-  <input type="checkbox" id="f8" class="focus-trigger">
-  <label for="f8" class="focus-card">
+  <input type="checkbox" id="f9" class="focus-trigger">
+  <label for="f9" class="focus-card">
     <div class="card-body">
       <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">채널 준비</div>
       <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
