@@ -390,7 +390,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
           <p class="card-desc" style="margin: 0;">Slack Connect 초대는 14일 동안만 활성화됩니다. 14일이 되지 않은 경우 발송인이 초대를 취소했을 수 있습니다.</p>
         </div>
         <div style="flex-shrink: 0;">
-          <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/9d0b6594-6a07-4802-ab1d-0609d59a2c60" style="max-width: 100%; height: auto;" />
+          <img width="350" height="200" alt="image" src="https://github.com/user-attachments/assets/9d0b6594-6a07-4802-ab1d-0609d59a2c60" style="max-width: 100%; height: auto;" />
         </div>
       </div>
     </div>
