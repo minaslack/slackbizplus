@@ -312,9 +312,9 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <b>[원인]</b><br>
+        <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
         <b>'포스트만 가능한 권한'을 가진 채널</b>에서 초대 링크를 생성한 뒤, 다른 멤버가 <b>해당 링크를 통해 초대를 수락하는 경우</b> 발생합니다.<br>
-        <b>[해결책]</b><br>
+        <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
         해당 채널의 경우, 초대 링크 수락이 불가능하므로 <b>채널을 소유한 쪽에서 이메일로 직접 초대</b>해야 정상적으로 참여할 수 있습니다.<br>
       </div>
     </div>
