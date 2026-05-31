@@ -37,7 +37,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 
   /* ─── [추가] 선택된 필터 버튼 스타일 활성화 (슬랙 테마 색상) ─── */
   #tab-all:checked ~ .filter-bar label[for="tab-all"],
-  #tab-auth:checked ~ .filter-bar label[for="tab-auth"],
+  #tab-upgrade:checked ~ .filter-bar label[for="tab-upgrade"],
   #tab-payload:checked ~ .filter-bar label[for="tab-payload"],
   #tab-network:checked ~ .filter-bar label[for="tab-network"],
   #tab-timeout:checked ~ .filter-bar label[for="tab-timeout"],
@@ -52,7 +52,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   }
 
   /* ─── [추가] 필터링 핵심 로직 ─── */
-  #tab-auth:checked ~ .card-grid .grid-item:not(.cat-auth),
+  #tab-upgrade:checked ~ .card-grid .grid-item:not(.cat-upgrade),
   #tab-payload:checked ~ .card-grid .grid-item:not(.cat-payload),
   #tab-network:checked ~ .card-grid .grid-item:not(.cat-network),
   #tab-timeout:checked ~ .card-grid .grid-item:not(.cat-timeout),
@@ -196,7 +196,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 </style>
 
 <input type="radio" id="tab-all" name="cat-filter" class="filter-trigger" checked>
-<input type="radio" id="tab-auth" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-upgrade" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-payload" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-network" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-timeout" name="cat-filter" class="filter-trigger">
@@ -207,7 +207,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 
 <div class="filter-bar">
   <label for="tab-all" class="filter-btn">ALL</label>
-  <label for="tab-auth" class="filter-btn">AUTH</label>
+  <label for="tab-auth" class="filter-btn">업그레이드</label>
   <label for="tab-payload" class="filter-btn">PAYLOAD</label>
   <label for="tab-network" class="filter-btn">NETWORK</label>
   <label for="tab-timeout" class="filter-btn">TIMEOUT</label>
@@ -219,11 +219,11 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 
 <div class="card-grid">
 
-<div class="grid-item cat-auth">
+<div class="grid-item cat-upgrade">
   <input type="checkbox" id="f1" class="focus-trigger">
   <label for="f1" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #0d47a1; background: #e3f2fd; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">AUTH</div>
+      <div style="font-weight: bold; color: #0d47a1; background: #e3f2fd; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">업그레이드</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 업그레이드할 준비가 되셨나요?</h3>
