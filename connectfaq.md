@@ -291,6 +291,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
         또는 <b>초대받는 사람이 멤버가 아니고 Guest인 경우</b>입니다.<br><br>
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
         초대받는 사람이 <b>본인 조직의 Slack 관리자와 확인</b>이 필요합니다.<br>
+        <br>
         <b>임시로 사용가능한 방법</b>으로는<br> 
         상대방 조직의 관리자를 Slack Connect로 <b>[포스트 및 초대 가능 권한]으로 초대</b>하고<br>
         <b>상대방 조직의 관리자가 직접 해당 멤버를 채널에 초대</b>하는 것입니다.
