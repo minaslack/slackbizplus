@@ -39,7 +39,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   #tab-all:checked ~ .filter-bar label[for="tab-all"],
   #tab-upgrade:checked ~ .filter-bar label[for="tab-upgrade"],
   #tab-invite:checked ~ .filter-bar label[for="tab-invite"],
-  #tab-network:checked ~ .filter-bar label[for="tab-network"],
   #tab-timeout:checked ~ .filter-bar label[for="tab-timeout"],
   #tab-channel:checked ~ .filter-bar label[for="tab-channel"],
   #tab-permission:checked ~ .filter-bar label[for="tab-permission"],
@@ -54,7 +53,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   /* ─── [추가] 필터링 핵심 로직 ─── */
   #tab-upgrade:checked ~ .card-grid .grid-item:not(.cat-upgrade),
   #tab-invite:checked ~ .card-grid .grid-item:not(.cat-invite),
-  #tab-network:checked ~ .card-grid .grid-item:not(.cat-network),
   #tab-timeout:checked ~ .card-grid .grid-item:not(.cat-timeout),
   #tab-channel:checked ~ .card-grid .grid-item:not(.cat-channel),
   #tab-permission:checked ~ .card-grid .grid-item:not(.cat-permission),
@@ -198,7 +196,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 <input type="radio" id="tab-all" name="cat-filter" class="filter-trigger" checked>
 <input type="radio" id="tab-upgrade" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-invite" name="cat-filter" class="filter-trigger">
-<input type="radio" id="tab-network" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-timeout" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-channel" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-permission" name="cat-filter" class="filter-trigger">
@@ -209,7 +206,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <label for="tab-all" class="filter-btn">ALL</label>
   <label for="tab-upgrade" class="filter-btn">업그레이드</label>
   <label for="tab-invite" class="filter-btn">초대 수락</label>
-  <label for="tab-network" class="filter-btn">NETWORK</label>
   <label for="tab-timeout" class="filter-btn">TIMEOUT</label>
   <label for="tab-channel" class="filter-btn">CHANNEL</label>
   <label for="tab-permission" class="filter-btn">PERMISSION</label>
@@ -271,11 +267,11 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   </label>
 </div>
 
-<div class="grid-item cat-network">
+<div class="grid-item cat-invite">
   <input type="checkbox" id="f3" class="focus-trigger">
   <label for="f3" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">NETWORK</div>
+      <div style="font-weight: bold; color: #c62828; background: #ffebee; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">초대 수락</div>
       <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
         <div style="flex: 1; min-width: 0;">
           <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 Slack Connect 초대를 수락할 수 없음</h3>
