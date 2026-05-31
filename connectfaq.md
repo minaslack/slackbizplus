@@ -351,7 +351,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 18px; color: #1d1c1d;">🚨 관리자 승인 대기 중</h3>
-          <p class="card-desc" style="margin: 0;">채널에 가입하기 위한 이 초대를 이미 수락했습니다. 채널은 내 조직 관리자 중 한 명의 승인만 받으면 됩니다. 채널이 연계되면 Slack으로 알림 메시지가 표시됩니다.</p>
+          <p class="card-desc" style="margin: 0;">채널에 가입하기 위한 이 초대를 이미 수락했습니다. 채널은 내 조직 관리자 중 한 명의 승인만 받으면 됩니다.</p>
         </div>
         <div style="flex-shrink: 0;">
           <img width="380" height="200" alt="image" src="https://github.com/user-attachments/assets/e633e8ba-9785-44dc-a1fd-ea7d75d26bc5" style="max-width: 100%; height: auto;" />
