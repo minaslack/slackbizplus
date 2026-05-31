@@ -361,10 +361,13 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
       </div>
     </div>
     <div class="hint-text"></div>
-    <div class="solution-area">
+<div class="solution-area">
       <div class="sol-box">
-        초대받는 조직에서 Slack Connect 초대 수락시 관리자의 승인이 필요한 경우 입니다. <br>
-상대방 조직의 관리자 승인이 되지 않는 상태에서 다시 Slack Connect 초대를 보내는 경우에 발생하는 스크린샷으로, 상대방 조직의 관리자가 승인을 해야 Slack Connect 연결이 됩니다. 초대하는 사용자에게 슬랙 관리자에게 연락하도록 가이드 하시면 됩니다.<br>
+        <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
+        초대를 받는 상대방 조직에서 'Slack Connect 이용 시 관리자 승인'을 필수 설정으로 해둔 경우,<br>
+상대방 조직의 관리자가 아직 초대를 승인하지 않은 상태에서, <b>다시 Slack Connect 초대를 보낼 때</b> 발생합니다.<br><br>
+        <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
+        상대방 조직의 담당자에게 <b>Slack 관리자의 'Slack Connect 초대 수락 승인'처리를 요청</b>해주세요.<br>
       </div>
     </div>
   </label>
