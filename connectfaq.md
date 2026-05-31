@@ -267,7 +267,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <input type="checkbox" id="f3" class="focus-trigger">
   <label for="f3" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #c62828; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">초대 수락</div>
+      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">초대 수락</div>
       <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
         <div style="flex: 1; min-width: 0;">
           <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 Slack Connect 초대를 수락할 수 없음</h3>
@@ -375,7 +375,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <input type="checkbox" id="f7" class="focus-trigger">
   <label for="f7" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #00796b; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">초대 수락</div>
+      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">초대 수락</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 이 Slack Connect 초대를 수락할 수 없음</h3>
