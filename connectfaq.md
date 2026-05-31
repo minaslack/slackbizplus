@@ -42,7 +42,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   #tab-timeout:checked ~ .filter-bar label[for="tab-timeout"],
   #tab-channel:checked ~ .filter-bar label[for="tab-channel"],
   #tab-permission:checked ~ .filter-bar label[for="tab-permission"],
-  #tab-size:checked ~ .filter-bar label[for="tab-size"],
   #tab-user:checked ~ .filter-bar label[for="tab-user"] {
     background: #4a154b;
     color: #ffffff;
@@ -56,7 +55,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   #tab-timeout:checked ~ .card-grid .grid-item:not(.cat-timeout),
   #tab-channel:checked ~ .card-grid .grid-item:not(.cat-channel),
   #tab-permission:checked ~ .card-grid .grid-item:not(.cat-permission),
-  #tab-size:checked ~ .card-grid .grid-item:not(.cat-size),
   #tab-user:checked ~ .card-grid .grid-item:not(.cat-user) {
     display: none !important;
   }
@@ -199,7 +197,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 <input type="radio" id="tab-timeout" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-channel" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-permission" name="cat-filter" class="filter-trigger">
-<input type="radio" id="tab-size" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-user" name="cat-filter" class="filter-trigger">
 
 <div class="filter-bar">
@@ -209,7 +206,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <label for="tab-timeout" class="filter-btn">TIMEOUT</label>
   <label for="tab-channel" class="filter-btn">CHANNEL</label>
   <label for="tab-permission" class="filter-btn">PERMISSION</label>
-  <label for="tab-size" class="filter-btn">SIZE</label>
   <label for="tab-user" class="filter-btn">USER</label>
 </div>
 
@@ -375,11 +371,11 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   </label>
 </div>
 
-<div class="grid-item cat-size">
+<div class="grid-item cat-invite">
   <input type="checkbox" id="f7" class="focus-trigger">
   <label for="f7" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #00796b; background: #e0f2f1; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">SIZE</div>
+      <div style="font-weight: bold; color: #00796b; background: #e0f2f1; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">초대 수락</div>
       <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 16px;">
         <div style="flex: 1;">
           <h3 style="margin: 0 0 4px 0; font-size: 16px; color: #1d1c1d;">🚨 이 Slack Connect 초대를 수락할 수 없음</h3>
