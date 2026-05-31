@@ -207,7 +207,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 
 <div class="filter-bar">
   <label for="tab-all" class="filter-btn">ALL</label>
-  <label for="tab-auth" class="filter-btn">업그레이드</label>
+  <label for="tab-upgrade" class="filter-btn">업그레이드</label>
   <label for="tab-payload" class="filter-btn">PAYLOAD</label>
   <label for="tab-network" class="filter-btn">NETWORK</label>
   <label for="tab-timeout" class="filter-btn">TIMEOUT</label>
