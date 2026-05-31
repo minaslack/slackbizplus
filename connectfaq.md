@@ -362,7 +362,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <span class="sol-title">해결책 1. 자동으로 채널 조인 처리</span><br>
         초대받는 조직에서 Slack Connect 초대 수락시 관리자의 승인이 필요한 경우 입니다. <br>
 상대방 조직의 관리자 승인이 되지 않는 상태에서 다시 Slack Connect 초대를 보내는 경우에 발생하는 스크린샷으로, 상대방 조직의 관리자가 승인을 해야 Slack Connect 연결이 됩니다. 초대하는 사용자에게 슬랙 관리자에게 연락하도록 가이드 하시면 됩니다.<br>
       </div>
