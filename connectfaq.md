@@ -412,7 +412,6 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
     <div class="hint-text"></div>
     <div class="solution-area">
       <div class="sol-box">
-        <span class="sol-title">해결책 1. 유저 ID 매핑 점검</span><br>
         아래와 같은 시나리오에 발생할 수 있습니다.<br>
 초대 받는 쪽이 그리드 환경인데, 다수의 사용자를 초대하는 경우.  조직1 의 사용자 X 가 조직2 의 사용자 A,B 를 초대하는 시나리오 입니다.<br>
 User A 는 조직 2의 워크스페이스 AA 의 멤버<br>
