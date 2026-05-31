@@ -55,6 +55,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   #tab-timeout:checked ~ .card-grid .grid-item:not(.cat-timeout),
   #tab-issue:checked ~ .card-grid .grid-item:not(.cat-issue),
   #tab-permission:checked ~ .card-grid .grid-item:not(.cat-permission),
+  #tab-ready:checked ~ .card-grid .grid-item:not(.cat-ready),
   #tab-user:checked ~ .card-grid .grid-item:not(.cat-user) {
     display: none !important;
   }
@@ -197,6 +198,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
 <input type="radio" id="tab-timeout" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-issue" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-permission" name="cat-filter" class="filter-trigger">
+<input type="radio" id="tab-ready" name="cat-filter" class="filter-trigger">
 <input type="radio" id="tab-user" name="cat-filter" class="filter-trigger">
 
 <div class="filter-bar">
@@ -206,6 +208,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 조치가 가능한
   <label for="tab-timeout" class="filter-btn">TIMEOUT</label>
   <label for="tab-issue" class="filter-btn">문제 발생</label>
   <label for="tab-permission" class="filter-btn">PERMISSION</label>
+    <label for="tab-ready" class="filter-btn">채널 준비</label>
   <label for="tab-user" class="filter-btn">USER</label>
 </div>
 
@@ -426,11 +429,11 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
   </label>
 </div>
 
-<div class="grid-item cat-auth">
+<div class="grid-item cat-ready">
   <input type="checkbox" id="f8" class="focus-trigger">
   <label for="f8" class="focus-card">
     <div class="card-body">
-      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">AUTH</div>
+      <div style="font-weight: bold; color: #e65100; background: #fff3e0; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 12px;">채널 준비</div>
       <div style="display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between; gap: 24px; width: 100%;">
         <div style="flex: 1; min-width: 0;">
           <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 채널이 곧 준비됩니다.</h3>
