@@ -312,7 +312,6 @@
 </body>
 </html>
       </div>
-    <br>
   </div>
 </details>
 <details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
