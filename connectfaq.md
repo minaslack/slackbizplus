@@ -429,9 +429,9 @@ Slack Connect 초대의 유효 기간은 <b>14일</b>입니다.<br>
         아래와 같은 상황에 발생할 수 있습니다.<br>
         * <b>초대자 X :</b> 조직 1의 사용자 X가 채널을 만들고 조직 2(Ent+플랜)의 <b>A와 B를 동시에 초대함</b><br>
         * <b>수락자 A :</b> 조직 2의 [워크스페이스 AA] 소속 -> <b>초대를 먼저 수락함</b><br>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 결과 : 이제 이 채널은 [조직 1]과 조직 2의 [워크스페이스 AA]를 잇는 다리가 됨<br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 결과 : 이제 이 채널은 [조직 1]과 조직 2의 [워크스페이스 AA]를 잇는 다리가 됨<br>
         * <b>수락자 B :</b> 조직 2의 [워크스페이스 BB] 소속 -> <b>연결 실패</b><br>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 이유 : 채널이 [워크스페이스 AA]와 연결되어 버렸는데, 정작 B는 AA의 멤버가 아니기 때문에 해당 채널에 접근할 권한이 없음<br><br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 이유 : 채널이 [워크스페이스 AA]와 연결되어 버렸는데, 정작 B는 AA의 멤버가 아니기 때문에 해당 채널에 접근할 권한이 없음<br><br>
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
         * <b>방법 1 (채널 수정) :</b> 조직 2 관리자가 해당 채널을 AA와 BB 모두 접근할 수 있는 <b>'멀티 워크스페이스 채널'</b>로 설정 변경(권장)<br>
         * <b>방법 2 (사용자 이동) :</b> 조직 2 관리자가 사용자 B를 [워크스페이스 AA]의 멤버로 추가<br>
@@ -462,11 +462,10 @@ Slack Connect 초대의 유효 기간은 <b>14일</b>입니다.<br>
             <div class="solution-area">
       <div class="sol-box">
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
-        상대방 조직의 멤버 A,B 를 동시에 초대하고 멤버 A 가 먼저 초대를 수락하였으나,<br>
-        아직 양 조직/워크스페이스의 관리자 승인이 되지 않았을 때 멤버 B 가 초대 링크를 클릭하게 되는 경우 나오는 화면 입니다.<br>
-        이때 [준비되면 본인 추가]버튼을 눌러두면 향후 양 조직/워크스페이스의 관리자 승인이 되었을 때 자동으로 추가됩니다.<br><br>
+        초대받은 멤버(A, B) 중 한 명(A)이 초대를 먼저 수락했으나, <b>양측 조직/워크스페이스 관리자의 승인 처리가 아직 완료되지 않았기 때문</b>입니다.<br>
+        이로 인해 두 번째 멤버(B)가 링크를 눌렀을 때 해당 메세지가 나타나게 됩니다.<br><br>
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
-        이 경우, <b>새로운 Slack Connect 초대를 다시 발송</b>하시면 정상적으로 연결할 수 있습니다.<br>
+        관리자 승인 전이라도 멤버 B가 [준비되면 본인 추가]버튼을 눌러두면, 추후 승인 시 별도 조치 없이 자동으로 워크스페이스에 입장하게 됩니다.<br>
       </div>
     </div>
   </label>
