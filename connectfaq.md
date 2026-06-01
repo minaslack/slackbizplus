@@ -428,8 +428,8 @@ Slack Connect 초대의 유효 기간은 <b>14일</b>입니다.<br>
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
         아래와 같은 시나리오에 발생할 수 있습니다.<br>
 초대 받는 쪽이 그리드 환경인데, 다수의 사용자를 초대하는 경우.  조직1 의 사용자 X 가 조직2 의 사용자 A,B 를 초대하는 시나리오 입니다.<br>
-User A 는 조직 2의 워크스페이스 AA 의 멤버<br>
-User B 는 조직 2의 워크스페이스 BB 의 멤버 <br>
+User A : 조직 2의 워크스페이스 AA 의 멤버<br>
+User B : 조직 2의 워크스페이스 BB 의 멤버<br>
 User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하는 경우 User B 는 워크스페이스 AA 의 멤버가 아니기 때문에 수락할 수 없는 경우 입니다.<br>
 이 경우 상대방 조직에서 해당 채널을 AA 와 BB 에서 둘다 접근 가능한 멀티워크스페이스 채널로 만들어주거나, 또는 User B 를 워크스페이스 AA 의 멤버로 추가해주어야 합니다.<br><br>
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
