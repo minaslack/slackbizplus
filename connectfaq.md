@@ -427,14 +427,14 @@ Slack Connect 초대의 유효 기간은 <b>14일</b>입니다.<br>
       <div class="sol-box">
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
         아래와 같은 상황에 발생할 수 있습니다.<br>
-        * <b>초대자 :</b> 조직 1의 사용자 X가 채널을 만들고 조직 2(Ent+플랜)의 <b>A와 B를 동시에 초대함</b><br>
+        * <b>초대자 X:</b> 조직 1의 사용자 X가 채널을 만들고 조직 2(Ent+플랜)의 <b>A와 B를 동시에 초대함</b><br>
         * <b>수락자 A :</b> 조직 2의 [워크스페이스 AA] 소속 -> <b>초대를 먼저 수락함</b><br>
          &nbsp;&nbsp;&nbsp;- 결과 : 이제 이 채널은 [조직 1]과 조직 2의 [워크스페이스 AA]를 잇는 다리가 됨<br>
         * <b>수락자 B:</b> 조직 2의 [워크스페이스 BB] 소속 -> <b>연결 실패</b><br>
          &nbsp;&nbsp;&nbsp;- 이유 : 채널이 [워크스페이스 AA]와 연결되어 버렸는데, 정작 B는 AA의 멤버가 아니기 때문에 해당 채널에 접근할 권한이 없음<br>
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
         * 방법 1 (채널 수정): 조직 2 관리자가 해당 채널을 AA와 BB 모두 접근할 수 있는 <b>'멀티 워크스페이스 채널'</b>로 설정 변경(권장)<br>
-        * 방법 2 (사용자 이동): 조직 2 관리자가 수락자 B를 [워크스페이스 AA]의 멤버로 추가<br><br>
+        * 방법 2 (사용자 이동): 조직 2 관리자가 사용자 B를 [워크스페이스 AA]의 멤버로 추가<br><br>
 </div>
     </div>
   </label>
