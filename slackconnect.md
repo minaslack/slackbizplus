@@ -93,12 +93,11 @@
 </details>
 
 <div style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
-  <a href="https://slackforadmin.github.io/slackbizplus/#/connectfaq" target="_blank" style="padding: 12px 15px; background: #fafbfc; font-weight: 600; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: #333;">
+  <a href="https://slackforadmin.github.io/slackbizplus/#/connectfaq" target="_blank" style="padding: 16px; background: #fafbfc; font-weight: 700; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: #24292e; box-sizing: border-box;">
     <span>:dart: Slack Connect Issue Guide</span>
-    <span style="color: #1264a3; font-size: 12px;">바로가기 ▶</span>
+    <span style="color: #1264a3; font-size: 12px; font-weight: normal;">바로가기 ▶</span>
   </a>
 </div>
-<br>
 
 <img width="1466" alt="image" src="https://github.com/user-attachments/assets/dddff10c-a80b-46b5-9555-6edc1d98fc80" />
 
