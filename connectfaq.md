@@ -427,7 +427,7 @@ Slack Connect 초대의 유효 기간은 <b>14일</b>입니다.<br>
       <div class="sol-box">
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
         아래와 같은 상황에 발생할 수 있습니다.<br>
-        * <b>초대자 :</b> 조직 1의 사용자 X가 채널을 만들고 조직 2(Ent+플랜)의 A와 B를 동시에 초대함<br>
+        * <b>초대자 :</b> 조직 1의 사용자 X가 채널을 만들고 조직 2(Ent+플랜)의 <b>A와 B를 동시에 초대함</b><br>
         * <b>수락자 A :</b> 조직 2의 [워크스페이스 AA] 소속 -> <b>초대를 먼저 수락함</b><br>
          - 결과: 이제 이 채널은 [조직 1]과 조직 2의 [워크스페이스 AA]를 잇는 다리가 됨<br>
         * <b>수락자 B:</b> 조직 2의 [워크스페이스 BB] 소속 -> <b>연결 실패</b><br>
