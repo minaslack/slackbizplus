@@ -463,7 +463,7 @@ User A 가 워크스페이스 AA 에서 Slack Connect 연결을 먼저 수락하
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
         상대방 조직의 멤버 A,B 를 동시에 초대하고 멤버 A 가 먼저 초대를 수락하였으나,<br>
         아직 양 조직/워크스페이스의 관리자 승인이 되지 않았을 때 멤버 B 가 초대 링크를 클릭하게 되는 경우 나오는 화면 입니다.<br>
-        이때 [준비되면 본인 추가]버튼을 눌러두면 향후 양 조직/워크스페이스의 관리자 승인이 되었을 때 자동으로 추가됩니다.<br>><br>
+        이때 [준비되면 본인 추가]버튼을 눌러두면 향후 양 조직/워크스페이스의 관리자 승인이 되었을 때 자동으로 추가됩니다.<br><br>
         <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
         이 경우, <b>새로운 Slack Connect 초대를 다시 발송</b>하시면 정상적으로 연결할 수 있습니다.<br>
       </div>
