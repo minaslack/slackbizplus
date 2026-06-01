@@ -8,7 +8,7 @@
   </summary>
   <div style="padding: 20px; border-top: 1px solid #e1e4e8; background: #fff; border-radius: 0 0 8px 8px;">
     <div style="display: flex; align-items: center; justify-content: flex-start; gap: 30px; flex-wrap: nowrap;">
-      곧 업로드 예정(5월 내)
+      곧 업로드 예정(6월 내)
     </div>
   </div>
 </details>
