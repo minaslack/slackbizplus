@@ -1,6 +1,8 @@
 
 # 연결
 
+현재 연결되어 있는 외부 워크스페이스의 현황을 확인할 수 있습니다. 해당 워크스페이스와의 연결 제거도 가능합니다.
+<br>
 <details style="margin-bottom: 8px; border: 1px solid #e1e4e8; border-radius: 8px; overflow: hidden;">
   <summary style="padding: 16px; cursor: pointer; background: #fafbfc; font-weight: 700; color: #24292e; display: flex; align-items: center; justify-content: space-between; border-radius: 8px 8px 0 0;">
     <div>
@@ -97,7 +99,6 @@
   </a>
 </div>
 <br>
-현재 연결되어 있는 외부 워크스페이스의 현황을 확인할 수 있습니다. 해당 워크스페이스와의 연결 제거도 가능합니다.
 
 <img width="1466" alt="image" src="https://github.com/user-attachments/assets/dddff10c-a80b-46b5-9555-6edc1d98fc80" />
 
