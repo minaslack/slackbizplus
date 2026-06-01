@@ -272,7 +272,7 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
         <div style="flex: 1; min-width: 0;">
           <h3 style="margin: 0 0 8px 0; font-size: 18px; color: #1d1c1d; word-break: keep-all;">🚨 Slack Connect 초대를 수락할 수 없음</h3>
           <p class="card-desc" style="margin: 0; color: #4a4a4a; font-size: 14px; line-height: 1.5; word-break: keep-all;">
-            관리자가 Slack Connect 초대를 수락하는 데 필요한 권한을 공유하지 않았습니다. 관리자에게 지원을 요청할 수 있습니다.<br>
+            관리자가 Slack Connect 초대를 수락하는 데 필요한 권한을 공유하지 않았습니다.<br>
             <br>
             또는 UI상에서 [수락]버튼이 grey out 처리된 경우
           </p>
@@ -394,11 +394,13 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
       </div>
     </div>
     <div class="hint-text"></div>
-    <div class="solution-area">
+        <div class="solution-area">
       <div class="sol-box">
-        Slack Connect 초대의 유효 기간은 <b>14일</b>입니다.<br>
+        <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">원인</div>
+Slack Connect 초대의 유효 기간은 <b>14일</b>입니다.<br>
         만약 연결 메시지가 확인되지 않거나 오류가 발생한다면,<br>
-        <b>유효 기간이 지났거나 초대한 조직(사용자 또는 관리자)에서 초대를 철회했을 가능성</b>이 있습니다.<br>
+        <b>유효 기간이 지났거나 초대한 조직(사용자 또는 관리자)에서 초대를 철회했을 가능성</b>이 있습니다.<br><br>
+        <div style="font-weight: bold; color: #4D5656; background: #F2F4F4; padding: 2px 6px; border-radius: 8px; width: fit-content; font-size: 11px; margin-bottom: 8px;">해결책</div>
         이 경우, <b>새로운 Slack Connect 초대를 다시 발송</b>하시면 정상적으로 연결할 수 있습니다.<br>
       </div>
     </div>
