@@ -36,7 +36,7 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
     </tr>
     <tr style="border-bottom: 1px solid #d0d7de;">
       <td style="padding: 10px 14px; font-weight: bold; border: 1px solid #d0d7de; font-size: 13px; color: #24292f;">사용자 제한</td>
-      <td style="padding: 10px 14px; border: 1px solid #d0d7de; color: #24292f;">최대 100명 (Salesforce Free Suite 기반)</td>
+      <td style="padding: 10px 14px; border: 1px solid #d0d7de; color: #24292f;">최대 100명</td>
     </tr>
     <tr style="border-bottom: 1px solid #d0d7de;">
       <td style="padding: 10px 14px; font-weight: bold; border: 1px solid #d0d7de; font-size: 13px; color: #24292f;">설정 방법</td>
