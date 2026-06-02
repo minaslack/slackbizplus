@@ -41,7 +41,8 @@ Slack Connect 사용 시의 에러 메세지등에 대해서 <strong>조치가 �
   #tab-invite:checked ~ .filter-bar label[for="tab-invite"],
   #tab-timeout:checked ~ .filter-bar label[for="tab-timeout"],
   #tab-issue:checked ~ .filter-bar label[for="tab-issue"],
-  #tab-permission:checked ~ .filter-bar label[for="tab-permission"] {
+  #tab-permission:checked ~ .filter-bar label[for="tab-permission"],
+  #tab-ready:checked ~ .filter-bar label[for="tab-ready"]{
     background: #4a154b;
     color: #ffffff;
     border-color: #4a154b;
