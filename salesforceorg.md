@@ -87,9 +87,9 @@ Salesforce에 Slack을 연결하면 팀이 Slack에서 바로 Salesforce 레코�
         1. 일반 사용자들이 Slack을 사용하기 위해서는 <strong>Salesforce에서의 사용자 이메일로 멤버 초대가 필요</strong>합니다.<br>
         2. <strong>선택한 개체에 Slack 버튼 표시 기능</strong>은 <strong>Release 262</strong>이상에 적용됩니다.<br>
          * 내 Org 릴리즈 버전 확인 방법 : 내 Org URL주소 + /releaseVersion.jsp<br>
-        3. Salesforce 채널 활성화를 위해 <strong>무료 플랜에서도 무제한 메시지 보존</strong>을 지원합니다.(Salesforce Pro Suite Licenses 이상)<br>
+        3. Salesforce 채널 활성화를 위해 <strong>무료 플랜에서도 무제한 메시지 보존</strong>을 지원합니다.<br>
+        (Salesforce Pro Suite Licenses 이상)<br>
       </div>
-    <br>
   </div>
 </details>
 <br>
