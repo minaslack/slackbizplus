@@ -139,6 +139,7 @@
         💡 추가 문의는 영업대표에게 연락 부탁드립니다.<br>
         <br>
         <div style="margin-bottom: 8px; font-weight: 600; color: #444; font-size: 14px;">📌 연동 가이드</div>
+        * 기존 워크스페이스 연계는 해당 영상 가이드를, 새 워크스페이스 생성은 아래 상세가이드를 참조 부탁드립니다.
         <video width="400" controls style="border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.06); border: 1px solid #e1e4e8; display: block;">
           <source src="https://github.com/minaslack/slackbizplus/releases/download/v1.0/SlackXSalesforce.mp4" type="video/mp4">
         </video>
