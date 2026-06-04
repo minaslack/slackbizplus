@@ -149,6 +149,7 @@
          &nbsp;&nbsp;&nbsp; * 내 Org 릴리즈 버전 확인 방법 : 내 Org URL주소 + /releaseVersion.jsp<br>
         3. Salesforce 채널 활성화를 위해 <strong>무료 플랜에서도 무제한 메시지 보존</strong>을 지원합니다.<br>
         &nbsp;&nbsp;&nbsp;(Salesforce Pro Suite Licenses 이상)<br>
+        <br>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
