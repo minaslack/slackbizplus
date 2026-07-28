@@ -24,7 +24,7 @@ SCIM API를 활용한 Atlas[Add-On기능] 설정가이드입니다.<br>
       <div style="padding: 15px; background: #f9f9f9; border-top: 1px solid #e1e4e8;">
         2) From scratch 선택
       </div>
-      <img width="508" alt="image" src="https://github.com/user-attachments/assets/8493ad6c-42fd-40ce-b9e9-d37cf47cb7b2" />
+      <img width="508" alt="image" src="https://github.com/user-attachments/assets/e84b62e0-f206-4c81-a7b6-0eb83dda2792" />
 <div style="padding: 15px; background: #f9f9f9; border-top: 1px solid #e1e4e8;">
         3) APP 이름을 지정하고, 워크스페이스를 선택 후 [Create App]버튼 클릭
       </div>
