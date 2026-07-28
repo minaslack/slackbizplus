@@ -22,7 +22,7 @@ SCIM API를 활용한 Atlas[Add-On기능] 설정가이드입니다.<br>
         </div>
       <img width="1301" alt="image" src="https://github.com/user-attachments/assets/6d9b0386-b79d-4ef6-959b-308e3a483875" />
       <div style="padding: 15px; background: #f9f9f9; border-top: 1px solid #e1e4e8;">
-        2) From scratch 선택
+        2) [Blank app] 선택 후 [Continue]버튼 클릭
       </div>
       <img width="508" alt="image" src="https://github.com/user-attachments/assets/e84b62e0-f206-4c81-a7b6-0eb83dda2792" />
 <div style="padding: 15px; background: #f9f9f9; border-top: 1px solid #e1e4e8;">
