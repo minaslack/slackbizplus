@@ -40,8 +40,8 @@
         </video>
       </div>
       <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <a href="asset/pdf/Slack_Google_SSO_Setting.pdf" 
-           download="Slack_Google_SSO_Setting_v2.pdf" 
+        <a href="asset/pdf/Slack_Google_SSO_Setting_v2.pdf" 
+           download="Slack_Google_SSO_Setting.pdf" 
            target="_blank" 
            title="Slack 가이드 PDF 다운로드" 
            style="display: inline-flex; align-items: center; justify-content: center; width: 72px; height: 72px; background-color: #f0f3f6; border: 2.5px solid #0366d6; border-radius: 50%; transition: all 0.2s ease-in-out; text-decoration: none; box-shadow: 0 4px 12px rgba(3,102,214,0.15); flex-shrink: 0;"
